@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 140" width="360" height="140" role="img" aria-label="Calle Sol">
+  <!-- Calle Sol -wordmark. Brush-tyyli: Shantell Sans (fallback cursive). -->
+  <style>
+    .word { font-family: "Shantell Sans", "Comic Sans MS", cursive; font-weight: 700; }
+  </style>
+  <rect width="360" height="140" fill="none"/>
+  <text class="word" x="180" y="68" text-anchor="middle" font-size="62" fill="#A13A1E">Calle</text>
+  <text class="word" x="180" y="124" text-anchor="middle" font-size="62" fill="#542916">Sol</text>
+  <!-- ✦-aksentit -->
+  <text x="296" y="60" text-anchor="middle" font-size="30" fill="#F1C166" font-family="sans-serif">✦</text>
+  <text x="70" y="118" text-anchor="middle" font-size="20" fill="#88B8CE" font-family="sans-serif">✦</text>
+</svg>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calle Sol — Menu (demo)</title>
+  <meta name="description" content="Calle Sol — tapas, cold &amp; hot small plates, wines and drinks. Small plates made for sharing. (Studio Blomma demo concept.)" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Work+Sans:wght@400;500;600&family=Shantell+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="sivut.css" />
+  <script src="lang.js"></script>
+</head>
+<body>
+
+  <!-- ====== DEMO-MUISTUTUS ====== -->
+  <div class="demo-bar">
+    <b>Demo</b>
+    <span data-l="en"> — Calle Sol is a Studio Blomma demo concept, not a real restaurant</span>
+    <span data-l="fi"> — Calle Sol on Studio Blomman demokonsepti, ei oikea ravintola</span>
+  </div>
+
+  <!-- ====== YLÄNAVI ====== -->
+  <nav class="topnav">
+    <a href="index.html"><span class="topnav__logo logomask" role="img" aria-label="Calle Sol"></span></a>
+    <div class="topnav__links">
+      <a href="index.html"><span data-l="en">Home</span><span data-l="fi">Etusivu</span></a>
+      <a href="menu.html"><span data-l="en">Menu</span><span data-l="fi">Ruokalista</span></a>
+      <a href="meista.html"><span data-l="en">About</span><span data-l="fi">Meistä</span></a>
+      <a href="yksityistilaisuudet.html"><span data-l="en">Private events</span><span data-l="fi">Yksityistilaisuudet</span></a>
+      <a href="ota-yhteytta.html"><span data-l="en">Contact</span><span data-l="fi">Ota yhteyttä</span></a>
+      <a class="is-cta" href="ota-yhteytta.html#varaa"><span data-l="en">Book a table</span><span data-l="fi">Varaa pöytä</span></a>
+      <span class="langtoggle">
+        <button type="button" data-setlang="en">EN</button>
+        <button type="button" data-setlang="fi">FI</button>
+      </span>
+    </div>
+  </nav>
+
+  <!-- ====== MENU / RUOKALISTA ====== -->
+  <main class="menu">
+    <div class="menu__head">
+      <span class="eyebrow"><span data-l="en">Menu</span><span data-l="fi">Ruokalista</span></span>
+      <h1>La <em>carta</em></h1>
+      <p>
+        <span data-l="en">Small plates made for sharing — order a few and pass them around the table.</span>
+        <span data-l="fi">Pieniä lautasia jaettavaksi — tilaa rohkeasti monta ja jaa kaikki pöydän kesken.</span>
+      </p>
+    </div>
+
+    <div class="menu__grid">
+
+      <!-- Vasen palsta: Tapas -->
+      <div>
+        <section class="menu__group">
+          <h2>Tapas</h2>
+
+          <h3 class="menu__sub"><span data-l="en">To nibble — Para picar</span><span data-l="fi">Naposteltavaa — Para picar</span></h3>
+
+          <div class="menu__item">
+            <span class="n"><span data-l="en">Marinated olives</span><span data-l="fi">Marinoidut oliivit</span></span>
+            <span class="price">6</span>
+            <span class="d"><span data-l="en">Lemon, herbs</span><span data-l="fi">Sitruuna, yrtit</span></span>
+          </div>
+          <div class="menu__item">
+            <span class="n">Pan con tomate</span>
+            <span class="price">7</span>
+            <span class="d"><span data-l="en">Toasted bread, tomato, olive oil</span><span data-l="fi">Paahtoleipä, tomaatti, oliiviöljy</span></span>
+          </div>
+          <div class="menu__item">
+            <span class="n"><span data-l="en">Fried almonds</span><span data-l="fi">Paahdetut mantelit</span></span>
+            <span class="price">5</span>
+            <span class="d"><span data-l="en">Sea salt</span><span data-l="fi">Merisuola</span></span>
+          </div>
+          <div class="menu__item">
+            <span class="n">Boquerones</span>
+            <span class="price">9</span>
+            <span class="d"><span data-l="en">Marinated anchovies, garlic</span><span data-l="fi">Marinoidut sardellit, valkosipuli</span></span>
+          </div>
+
+          <h3 class="menu__sub"><span data-l="en">Cold tapas — Tapas frías</span><span data-l="fi">Kylmät tapakset — Tapas frías</span></h3>
+
+          <div class="menu__item">
+            <span class="n">Jamón ibérico de bellota</span>
+            <span class="price">16</span>
+            <span class="d"><span data-l="en">36-month cured ham</span><span data-l="fi">36 kk kuivattu kinkku</span></span>
+          </div>
+          <div class="menu__item">
+            <span class="n">Gazpacho andaluz</span>
+            <span class="price">9</span>
+            <span class="d"><span data-l="en">Chilled tomato soup, basil</span><span data-l="fi">Kylmä tomaattikeitto, basilika</span></span>
+          </div>
+          <div class="menu__item">
+            <span class="n">Ensaladilla rusa</span>
+            <span class="price">8</span>
+            <span class="d"><span data-l="en">Potato salad, tuna, aioli</span><span data-l="fi">Perunasalaatti, tonnikala, aioli</span></span>
+          </div>
+          <div class="menu__item">
+            <span class="n"><span data-l="en">Manchego cheese</span><span data-l="fi">Manchego-juusto</span></span>
+            <span class="price">12</span>
+            <span class="d"><span data-l="en">Sheep's milk cheese, honey, almonds</span><span data-l="fi">Lampaanmaitojuusto, hunaja, mantelit</span></span>
+          </div>
+        </section>
+      </div>
+
+      <!-- Oikea palsta: lämpimät tapakset + baari -->
+      <div>
+        <section class="menu__group">
+          <h2 aria-hidden="true" style="visibility:hidden">Tapas</h2>
+
+          <h3 class="menu__sub"><span data-l="en">Hot tapas — Tapas calientes</span><span data-l="fi">Lämpimät tapakset — Tapas calientes</span></h3>
+
+          <div class="menu__item">
+            <span class="n">Gambas al ajillo</span>
+            <span class="price">14</span>
+            <span class="d"><span data-l="en">Prawns, garlic, chili, olive oil</span><span data-l="fi">Katkaravut, valkosipuli, chili, oliiviöljy</span></span>
+          </div>
+          <div class="menu__item">
+            <span class="n">Patatas bravas</span>
+            <span class="price">8</span>
+            <span class="d"><span data-l="en">Fried potatoes, salsa brava, aioli</span><span data-l="fi">Paistettu peruna, salsa brava, aioli</span></span>
+          </div>
+          <div class="menu__item">
+            <span class="n">Croquetas de jamón</span>
+            <span class="price">9</span>
+            <span class="d"><span data-l="en">Ham croquettes</span><span data-l="fi">Kinkkukroketit</span></span>
+          </div>
+          <div class="menu__item">
+            <span class="n">Pulpo a la gallega</span>
+            <span class="price">17</span>
+            <span class="d"><span data-l="en">Octopus, potato, paprika, olive oil</span><span data-l="fi">Mustekala, peruna, paprika, oliiviöljy</span></span>
+          </div>
+          <div class="menu__item">
+            <span class="n">Chorizo al vino</span>
+            <span class="price">11</span>
+            <span class="d"><span data-l="en">Chorizo in red wine</span><span data-l="fi">Chorizo punaviinissä</span></span>
+          </div>
+          <div class="menu__item">
+            <span class="n">Pimientos de Padrón</span>
+            <span class="price">8</span>
+            <span class="d"><span data-l="en">Fried green peppers, sea salt</span><span data-l="fi">Paistetut vihreät paprikat, merisuola</span></span>
+          </div>
+          <div class="menu__item">
+            <span class="n">Tortilla española</span>
+            <span class="price">9</span>
+            <span class="d"><span data-l="en">Spanish potato omelette</span><span data-l="fi">Espanjalainen perunamunakas</span></span>
+          </div>
+        </section>
+
+        <section class="menu__group">
+          <h2><span data-l="en">Bar</span><span data-l="fi">Baari</span></h2>
+
+          <h3 class="menu__sub"><span data-l="en">Wines · Drinks</span><span data-l="fi">Viinit · Juomat</span></h3>
+
+          <div class="menu__item">
+            <span class="n">Cava Brut</span>
+            <span class="price">9 / 42</span>
+            <span class="d"><span data-l="en">Glass / bottle</span><span data-l="fi">Lasi / pullo</span></span>
+          </div>
+          <div class="menu__item">
+            <span class="n">Rioja Crianza</span>
+            <span class="price">9 / 44</span>
+          </div>
+          <div class="menu__item">
+            <span class="n">Albariño</span>
+            <span class="price">10 / 46</span>
+          </div>
+          <div class="menu__item">
+            <span class="n">Sangría</span>
+            <span class="price">8 / 28</span>
+            <span class="d"><span data-l="en">Glass / pitcher</span><span data-l="fi">Lasi / kannu</span></span>
+          </div>
+          <div class="menu__item">
+            <span class="n">Vermut rojo</span>
+            <span class="price">7</span>
+            <span class="d"><span data-l="en">Red vermouth</span><span data-l="fi">Punainen vermutti</span></span>
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+    <div class="menu__actions">
+      <a class="btn" href="assets/menu/calle-sol-menu.pdf" target="_blank" rel="noopener">
+        <span data-l="en">Download menu (PDF)</span><span data-l="fi">Lataa ruokalista (PDF)</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- ====== 303 · FOOTER ====== -->
+  <footer class="footer303">
+    <div class="footer303__main">
+      <div>
+        <span class="footer303__logo logomask" role="img" aria-label="Calle Sol"></span>
+      </div>
+      <div class="col">
+        <h4><span data-l="en">Restaurant</span><span data-l="fi">Ravintola</span></h4>
+        <a href="menu.html"><span data-l="en">Menu</span><span data-l="fi">Ruokalista</span></a>
+        <a href="menu.html"><span data-l="en">Wine list</span><span data-l="fi">Viinilista</span></a>
+        <a href="meista.html"><span data-l="en">About</span><span data-l="fi">Meistä</span></a>
+      </div>
+      <div class="col">
+        <h4><span data-l="en">Visit</span><span data-l="fi">Vieraile</span></h4>
+        <a href="index.html#aukiolo"><span data-l="en">Opening hours</span><span data-l="fi">Aukioloajat</span></a>
+        <a href="ota-yhteytta.html"><span data-l="en">Location</span><span data-l="fi">Sijainti</span></a>
+        <a href="ota-yhteytta.html#varaa"><span data-l="en">Book a table</span><span data-l="fi">Varaa pöytä</span></a>
+      </div>
+      <div>
+        <p class="footer303__desc">
+          <span data-l="en">Tapas &amp; wine bar on the sunny street. Small plates, big nights, shared moments.</span>
+          <span data-l="fi">Tapas &amp; viinibaari aurinkokadun varrella. Pieniä lautasia, isoja iltoja, jaettuja hetkiä.</span>
+        </p>
+        <div class="footer303__social">
+          <a href="#">IG</a>
+          <a href="#">FB</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer303__legal">
+      <span>© 2026 Calle Sol — demo</span>
+      <span><span data-l="en">Design</span><span data-l="fi">Suunnittelu</span> · Studio Blomma</span>
+      <span><span data-l="en">Privacy · Accessibility</span><span data-l="fi">Tietosuoja · Saavutettavuus</span></span>
+    </div>
+  </footer>
+
+</body>
+</html>

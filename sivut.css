@@ -24,9 +24,9 @@
   --ink:   var(--vari-8);   /* teksti / viivat / reunat / grafiikat */
 
   /* Fontit */
-  --font-display: "Space Grotesk", system-ui, -apple-system, sans-serif; /* fontti 1 — otsikot */
-  --font-body:    "Helvetica Neue", Helvetica, Arial, sans-serif;        /* fontti 3 — leipä */
-  --font-script:  "Shantell Sans", "Comic Sans MS", cursive;             /* käsiala-aksentit */
+  --font-display: "Poppins", system-ui, -apple-system, sans-serif;   /* fontti 1 — otsikot (Poppins Medium) */
+  --font-body:    "Work Sans", system-ui, -apple-system, sans-serif; /* fontti 3 — leipä (Work Sans) */
+  --font-script:  "Shantell Sans", "Comic Sans MS", cursive;         /* käsiala-aksentit */
 
   --maxw: 1280px;
   --track: 0.22em; /* caps-harvennus (fontti 4) */
@@ -49,7 +49,7 @@ body {
 
 img, svg { display: block; max-width: 100%; }
 
-h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.02; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.08; letter-spacing: 0; }
 
 a { color: inherit; text-decoration: none; }
 
@@ -61,6 +61,25 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: var(--track);
   font-size: 0.72rem;
 }
+
+/* Kielivalinta: englanti oletus, suomi vaihtoehtona */
+[data-lang="en"] [data-l="fi"],
+[data-lang="fi"] [data-l="en"] { display: none !important; }
+
+.langtoggle { display: inline-flex; border: 1.5px solid var(--ink); }
+.langtoggle button {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 11px;
+  background: transparent;
+  color: var(--ink);
+  border: 0;
+  cursor: pointer;
+}
+.langtoggle button + button { border-left: 1.5px solid var(--ink); }
+.langtoggle button[aria-pressed="true"] { background: var(--vari-8); color: var(--paper); }
 
 /* Logon väritys: yksivärinen SVG maskataan haluttuun väriin */
 .logomask {
@@ -585,6 +604,50 @@ a { color: inherit; text-decoration: none; }
 .kontakti209__info p { font-size: 0.92rem; line-height: 1.7; }
 .kontakti209__info a { text-decoration: underline; text-underline-offset: 3px; }
 .kontakti209__note { margin-top: 12px; font-size: 0.7rem; letter-spacing: 0.04em; opacity: 0.65; }
+
+/* ========================================================================
+   MENU / RUOKALISTA (menu.html)
+   Luettavuuden vuoksi teksti väri 11 (kaakao), hinnat väri 12, aksentit väri 8
+   ======================================================================== */
+
+.menu {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: clamp(40px, 6vw, 84px) clamp(20px, 5vw, 56px);
+  color: var(--vari-11);
+}
+.menu__head { text-align: center; margin-bottom: clamp(36px, 5vw, 64px); }
+.menu__head .eyebrow { color: var(--vari-8); }
+.menu__head h1 { font-size: clamp(2.6rem, 7vw, 4.8rem); margin: 12px 0 10px; }
+.menu__head h1 em { font-family: var(--font-script); font-style: normal; color: var(--vari-12); }
+.menu__head p { font-size: 0.95rem; max-width: 46ch; margin: 0 auto; }
+
+.menu__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 72px); align-items: start; }
+.menu__group { margin-bottom: clamp(28px, 4vw, 44px); }
+.menu__group > h2 {
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  border-bottom: 2px solid var(--vari-8);
+  padding-bottom: 10px;
+}
+.menu__sub {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  color: var(--vari-8);
+  margin: 22px 0 10px;
+}
+.menu__item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 16px;
+  padding: 9px 0;
+  border-bottom: 1px dashed color-mix(in srgb, var(--vari-11) 35%, transparent);
+}
+.menu__item .n { font-family: var(--font-display); font-weight: 600; font-size: 1rem; }
+.menu__item .price { font-family: var(--font-display); font-weight: 700; color: var(--vari-12); white-space: nowrap; }
+.menu__item .d { grid-column: 1 / -1; font-size: 0.85rem; margin-top: 2px; color: color-mix(in srgb, var(--vari-11) 78%, transparent); }
+.menu__actions { text-align: center; margin-top: clamp(34px, 5vw, 56px); }
 
 /* ---- Responsiivisuus ------------------------------------------------- */
 

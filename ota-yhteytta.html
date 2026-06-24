@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calle Sol — Ota yhteyttä (demo)</title>
+  <meta name="description" content="Calle Sol — yhteystiedot, aukioloajat ja pöytävaraus. Flemminginkatu 29, Helsinki Kallio. (Blomman demokonsepti.)" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="sivut.css" />
+</head>
+<body>
+
+  <!-- ====== DEMO-MUISTUTUS ====== -->
+  <div class="demo-bar">
+    <b>Demo</b> — Calle Sol on Studio Blomman demokonsepti, ei oikea ravintola
+  </div>
+
+  <!-- ====== YLÄNAVI ====== -->
+  <nav class="topnav">
+    <a href="index.html"><span class="topnav__logo logomask" role="img" aria-label="Calle Sol"></span></a>
+    <div class="topnav__links">
+      <a href="index.html">Etusivu</a>
+      <a href="menu.html">Ruokalista</a>
+      <a href="meista.html">Meistä</a>
+      <a href="yksityistilaisuudet.html">Yksityistilaisuudet</a>
+      <a href="ota-yhteytta.html">Ota yhteyttä</a>
+      <a class="is-cta" href="#varaa">Varaa pöytä</a>
+    </div>
+  </nav>
+
+  <!-- ====== 209 · OTA YHTEYTTÄ (kartta + info) ====== -->
+  <section class="kontakti209" id="varaa">
+    <!-- Vasen palsta: kartta (kuvan sijaan) -->
+    <div class="kontakti209__map">
+      <iframe
+        title="Calle Sol sijainti kartalla — Flemminginkatu 29, Helsinki"
+        loading="lazy"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=24.9490%2C60.1855%2C24.9590%2C60.1900&layer=mapnik&marker=60.18775%2C24.9540"></iframe>
+    </div>
+
+    <!-- Oikea palsta: tumma info + varaus -->
+    <div class="kontakti209__panel">
+      <span class="eyebrow">Ota yhteyttä</span>
+      <h2>Tervetuloa <em>kylään</em></h2>
+
+      <div class="kontakti209__info">
+        <div>
+          <h4>Aukioloajat</h4>
+          <p>
+            Ti–To · 16–23<br />
+            Pe–La · 14–01<br />
+            Su–Ma · suljettu
+          </p>
+        </div>
+        <div>
+          <h4>Sijainti</h4>
+          <p>
+            Flemminginkatu 29<br />
+            00530 Helsinki, Kallio<br />
+            <a href="https://www.openstreetmap.org/?mlat=60.18775&amp;mlon=24.9540#map=17/60.18775/24.9540" target="_blank" rel="noopener">Avaa kartta →</a>
+          </p>
+        </div>
+        <div>
+          <h4>Yhteystiedot</h4>
+          <p>
+            <a href="mailto:hola@callesol.demo">hola@callesol.demo</a><br />
+            <a href="tel:+358000000000">+358 00 000 0000</a>
+          </p>
+        </div>
+        <div>
+          <h4>Seuraa</h4>
+          <p>
+            <a href="#">@callesol</a> · Instagram<br />
+            <a href="#">Calle Sol</a> · Facebook
+          </p>
+        </div>
+      </div>
+
+      <a class="btn btn--solid" href="#varaa" onclick="alert('Demo: tähän avautuisi pöydänvarausjärjestelmä.'); return false;">Varaa pöytä</a>
+      <span class="kontakti209__note">Avaisi pöydänvarausjärjestelmän (demossa ei kytketty).</span>
+    </div>
+  </section>
+
+  <!-- ====== 303 · FOOTER ====== -->
+  <footer class="footer303">
+    <div class="footer303__main">
+      <div>
+        <span class="footer303__logo logomask" role="img" aria-label="Calle Sol"></span>
+      </div>
+      <div class="col">
+        <h4>Ravintola</h4>
+        <a href="menu.html">Ruokalista</a>
+        <a href="menu.html">Viinilista</a>
+        <a href="meista.html">Meistä</a>
+      </div>
+      <div class="col">
+        <h4>Vieraile</h4>
+        <a href="ota-yhteytta.html">Aukioloajat</a>
+        <a href="ota-yhteytta.html">Sijainti</a>
+        <a href="#varaa">Varaa pöytä</a>
+      </div>
+      <div>
+        <p class="footer303__desc">
+          Tapas &amp; viinibaari aurinkokadun varrella. Pieniä lautasia, isoja
+          iltoja, jaettuja hetkiä.
+        </p>
+        <div class="footer303__social">
+          <a href="#">IG</a>
+          <a href="#">FB</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer303__legal">
+      <span>© 2026 Calle Sol — demo</span>
+      <span>Suunnittelu · Studio Blomma</span>
+      <span>Tietosuoja · Saavutettavuus</span>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -12,3 +12,6 @@ Numeroidut valokuvat. Pudota tiedostot tähän nimillä (esim. `kuva-5.webp`):
 | `kuva-12.webp` | Etusivu, esittely (205) — kuva oikea |
 
 Kunnes tiedosto on lisätty, sivulla näkyy väripaikkamerkki + "kuva N" -lappu.
+
+| `kuva-3.webp` | Yksityistilaisuudet (802) — kuva oikea |
+| `kuva-4.webp` | Yksityistilaisuudet, naapuri (802 flip) — kuva vasen |

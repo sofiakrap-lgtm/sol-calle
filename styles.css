@@ -12,6 +12,14 @@
   --eau-trouble:      #B79858; /* sekundääri okra */
   --bleu-porcelaine:  #88B8CE; /* viileä pop-accent */
 
+  /* Laajennettu paletti (lisävärit, ks. varit.html) */
+  --sable-clair:      #EAE1CB; /* vaalea hiekka */
+  --rose-poussiere:   #D18E97; /* pölyinen ruusu */
+  --moutarde:         #D2A432; /* sinappi / okra */
+  --olive-douce:      #979E6C; /* pehmeä oliivi */
+  --cacao:            #5B3B1E; /* tumma kaakao */
+  --orange-brule:     #BC6727; /* poltettu oranssi */
+
   /* Fontit */
   --font-brush:  "Shantell Sans", "Comic Sans MS", cursive;        /* logo / aksentit */
   --font-ui:     "Hanken Grotesk", system-ui, -apple-system, sans-serif; /* otsikot + leipä + UI */

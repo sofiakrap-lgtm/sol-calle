@@ -20,6 +20,20 @@
   --cacao:            #5B3B1E; /* tumma kaakao */
   --orange-brule:     #BC6727; /* poltettu oranssi */
 
+  /* Numeroidut väri-aliakset (järjestelmä viittaa "väri N") */
+  --vari-1:  var(--nuage-de-lait);    /* #FEFAF0 */
+  --vari-2:  var(--espresso);         /* #542916 */
+  --vari-3:  var(--terre-cuite);      /* #A13A1E */
+  --vari-4:  var(--miel-dore);        /* #F1C166 */
+  --vari-5:  var(--eau-trouble);      /* #B79858 */
+  --vari-6:  var(--bleu-porcelaine);  /* #88B8CE */
+  --vari-7:  var(--sable-clair);      /* #EAE1CB  (lisä 1) */
+  --vari-8:  var(--rose-poussiere);   /* #D18E97  (lisä 2) */
+  --vari-9:  var(--moutarde);         /* #D2A432  (lisä 3) */
+  --vari-10: var(--olive-douce);      /* #979E6C  (lisä 4) */
+  --vari-11: var(--cacao);            /* #5B3B1E  (lisä 5) */
+  --vari-12: var(--orange-brule);     /* #BC6727  (lisä 6) */
+
   /* Fontit */
   --font-brush:  "Shantell Sans", "Comic Sans MS", cursive;        /* logo / aksentit */
   --font-ui:     "Hanken Grotesk", system-ui, -apple-system, sans-serif; /* otsikot + leipä + UI */

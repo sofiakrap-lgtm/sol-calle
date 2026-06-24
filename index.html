@@ -3,195 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calle Sol — tapas & viinibaari (demo)</title>
-  <meta name="description" content="Calle Sol — lämmin espanjalainen tapas- ja viinibaari. Aurinkoa, natural winea ja kynttilänvaloa. (Blomman demokonsepti.)" />
+  <title>Calle Sol — tapas &amp; viinibaari (demo)</title>
+  <meta name="description" content="Calle Sol — pieni Espanja keskellä Helsinkiä. Tapas, luonnonviini ja jaettavat hetket. (Blomman demokonsepti.)" />
 
-  <!-- Brändifontit: Shantell Sans (brush) + Hanken Grotesk (UI) -->
+  <!-- Fontti 1: Space Grotesk (otsikot) · käsiala-aksentit: Shantell Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&family=Shantell+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="sivut.css" />
 </head>
 <body>
 
-  <!-- ====== NAV ====== -->
-  <nav class="nav">
-    <div class="nav__inner">
-      <a class="logo" href="#">Calle <span>Sol</span></a>
-      <div class="nav__links">
-        <a href="#tunnelma">Tunnelma</a>
-        <a href="#menu">Menu</a>
-        <a href="#viini">Viini</a>
-        <a href="varit.html">Värit</a>
-        <a class="btn btn--cta" href="#varaa" style="padding:.6em 1.3em">Varaa pöytä</a>
-      </div>
-    </div>
-  </nav>
+  <!-- ====== DEMO-MUISTUTUS ====== -->
+  <div class="demo-bar">
+    <b>Demo</b> — Calle Sol on Studio Blomman demokonsepti, ei oikea ravintola
+  </div>
 
-  <!-- ====== HERO ====== -->
-  <header class="hero">
-    <div class="sparkle" style="top:12%; left:8%; font-size:1.6rem">✦</div>
-    <div class="sparkle" style="top:30%; right:12%; font-size:1.1rem">✦</div>
-    <div class="sparkle" style="bottom:14%; left:46%; font-size:1.3rem">✦</div>
-    <div class="wrap">
-      <div class="hero__grid">
-        <div>
-          <span class="label">Tapas &amp; vino · luonnonviini</span>
-          <h1>Aurinkokadun <em>pöytä</em> on katettu.</h1>
-          <p class="lead">
-            Pieniä lautasia, isoja iltoja. Kynttilänvaloa, kaakeleita ja
-            luonnonviiniä — eteläeurooppalainen tunnelma keskellä kaupunkia.
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--cta" href="#varaa">Varaa pöytä</a>
-            <a class="btn btn--ghost" href="#menu">Katso menu</a>
-          </div>
-        </div>
-        <div class="hero__photo">
-          <span class="stamp">¡buenas noches! ✦</span>
-        </div>
-      </div>
+  <!-- ====== 107 · HERO ====== -->
+  <header class="hero107">
+    <div class="hero107__img">
+      <div class="hero107__corner">Tapas &amp; vino<br />Luonnonviini<br />Helsinki</div>
+      <div class="hero107__index">1 / 5</div>
+      <span class="kuvatag">kuva 5</span>
+    </div>
+    <div class="hero107__panel">
+      <nav class="hero107__nav">
+        <a href="index.html">Etusivu</a>
+        <a href="menu.html">Ruokalista</a>
+        <a href="meista.html">Meistä</a>
+        <a href="#yhteys">Yhteystiedot</a>
+        <a class="is-cta" href="#varaa">Varaa pöytä</a>
+      </nav>
+      <span class="hero107__logo logomask" role="img" aria-label="Calle Sol"></span>
     </div>
   </header>
 
-  <!-- ====== KAAKELIPALKKI ====== -->
-  <div class="tiles" aria-hidden="true">
-    <span></span><span></span><span></span><span></span><span></span><span></span>
-    <span></span><span></span><span></span><span></span><span></span><span></span>
-  </div>
-
-  <!-- ====== TUNNELMA ====== -->
-  <section id="tunnelma">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="label">Tunnelma</span>
-        <h2>Lämmin, eloisa, intiimi.</h2>
-        <p>Calle Sol on paikka, jossa illat venyvät — sosiaalinen, käsinpiirretty ja aito.</p>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <div class="ico">🕯️</div>
-          <h3>Kynttilänvalo</h3>
-          <p>Matala valo, filmirae ja pehmeät pinnat. Tunnelma joka hidastaa illan tahdin.</p>
-        </article>
-        <article class="card">
-          <div class="ico">🍷</div>
-          <h3>Natural wine</h3>
-          <p>Pieniltä tiloilta, eläviä ja rosoisia. Henkilökunta kaataa suosikkinsa mielellään.</p>
-        </article>
-        <article class="card">
-          <div class="ico">🫒</div>
-          <h3>Tapas jaettavaksi</h3>
-          <p>Pieniä lautasia keskelle pöytää — tilaa rohkeasti monta ja jaa kaikki.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== MENU (tumma) ====== -->
-  <section id="menu" class="dark">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="label">Menu</span>
-        <h2>Pieniä lautasia</h2>
-      </div>
-      <div class="menu-list">
-        <div class="menu-item">
-          <span class="name">Pan con tomate <span class="desc">paahtoleipä, tomaatti, oliiviöljy</span></span>
-          <span class="price">7</span>
-        </div>
-        <div class="menu-item">
-          <span class="name">Gambas al ajillo <span class="desc">katkaravut, valkosipuli, chili</span></span>
-          <span class="price">14</span>
-        </div>
-        <div class="menu-item">
-          <span class="name">Croquetas de jamón <span class="desc">rapeat kinkkukroketit</span></span>
-          <span class="price">9</span>
-        </div>
-        <div class="menu-item">
-          <span class="name">Patatas bravas <span class="desc">paistettu peruna, bravas-kastike, aïoli</span></span>
-          <span class="price">8</span>
-        </div>
-        <div class="menu-item">
-          <span class="name">Boquerones <span class="desc">marinoidut sardellit, sitruuna</span></span>
-          <span class="price">10</span>
-        </div>
-        <div class="menu-item">
-          <span class="name">Tortilla española <span class="desc">peruna-munakas, hidas ja pehmeä</span></span>
-          <span class="price">9</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== VIINI ====== -->
-  <section id="viini">
-    <div class="wrap">
-      <div class="hero__grid">
-        <div class="hero__photo" style="aspect-ratio:5/4; background:
-          radial-gradient(120% 90% at 30% 30%, rgba(136,184,206,0.45), transparent 55%),
-          linear-gradient(160deg, var(--eau-trouble), var(--terre-cuite));">
-          <span class="stamp">vino natural ✦</span>
-        </div>
-        <div>
-          <span class="label">Viini</span>
-          <h2 style="margin:14px 0">Lasista <span class="brush" style="color:var(--terre-cuite)">pulloon</span></h2>
-          <p class="lead">
-            Vaihtuva lista luonnonviinejä — oranssia, kuohuvaa, kepeää punaista.
-            Kerro mistä pidät, me löydämme lasin sinulle.
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--ghost" href="#varaa">Kysy suosituksia</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== VARAA / CTA ====== -->
-  <section id="varaa">
-    <div class="wrap">
-      <div class="cta-band">
-        <span class="label" style="color:var(--terre-cuite); justify-content:center">Varaa pöytä</span>
-        <p class="brush">Nähdään aurinkokadulla</p>
-        <h2>Ti–La · 16–24</h2>
-        <div class="hero__actions" style="justify-content:center; margin-top:24px">
-          <a class="btn btn--cta" href="mailto:hola@callesol.demo">Varaa sähköpostilla</a>
-          <a class="btn btn--ghost" href="tel:+358000000000">Soita meille</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== FOOTER ====== -->
-  <footer>
-    <div class="wrap">
-      <div class="footer__grid">
-        <div>
-          <a class="logo" href="#">Calle <span>Sol</span></a>
-          <p style="margin-top:12px; opacity:.8; max-width:34ch">
-            Tapas &amp; viinibaari. Lämmintä eteläeurooppalaista tunnelmaa,
-            luonnonviiniä ja kynttilänvaloa.
-          </p>
-        </div>
-        <div>
-          <h4>Löydä</h4>
-          <a href="#tunnelma">Tunnelma</a>
-          <a href="#menu">Menu</a>
-          <a href="#viini">Viini</a>
-          <a href="#varaa">Varaa pöytä</a>
-        </div>
-        <div>
-          <h4>Yhteys</h4>
-          <a href="#">Aurinkokatu 1</a>
-          <a href="mailto:hola@callesol.demo">hola@callesol.demo</a>
-          <a href="#">@callesol</a>
-        </div>
-      </div>
-      <p class="footer__note">
-        Calle Sol on Blomman portfolio-/demokonsepti — ei oikea ravintola. © 2026.
+  <!-- ====== 205 · LYHYT ESITTELY ====== -->
+  <section class="intro205" id="esittely">
+    <div class="intro205__text">
+      <span class="eyebrow">Mitä · missä · tunnelma</span>
+      <h2>Pieni <em>Espanja</em><br />keskellä Helsinkiä</h2>
+      <p class="intro205__body">
+        Sinun lähinaapurisi, joka tuo perheet, kaverit ja koko kylän saman
+        pöydän ääreen. Matalat valot, kaakelit ja luonnonviini — paikka, jossa
+        illat venyvät eikä kukaan katso kelloa. Tilataan rohkeasti monta
+        lautasta keskelle pöytää ja jaetaan kaikki.
       </p>
+      <div class="intro205__btns">
+        <a class="btn" href="meista.html">Meistä</a>
+        <a class="btn btn--solid" href="menu.html">Ruokalista</a>
+      </div>
+    </div>
+    <div class="intro205__img" style="position:relative">
+      <span class="kuvatag">kuva 12</span>
+    </div>
+  </section>
+
+  <!-- ====== AUKIOLOAJAT ====== -->
+  <section class="hours" id="aukiolo">
+    <h2 class="hours__title">( Aukioloajat )</h2>
+    <div class="hours__grid">
+      <span class="hours__arrow">&lt;</span>
+      <div class="hours__cols">
+        <div class="hours__col">
+          <span class="eyebrow">Arkisin</span>
+          <p>Ti–To · 16–23</p>
+        </div>
+        <div class="hours__col">
+          <span class="eyebrow">Viikonloppu</span>
+          <p>Pe–La · 14–01</p>
+        </div>
+      </div>
+      <span class="hours__arrow">&gt;</span>
+    </div>
+    <p class="hours__note">Poikkea ihmeessä — me tykätään siitä</p>
+    <p class="hours__closed">Sunnuntaisin ja maanantaisin suljettu</p>
+  </section>
+
+  <!-- ====== 217 · PIKALINKKI VARAUKSEEN ====== -->
+  <section class="book217" id="varaa">
+    <span class="kuvatag">kuva 10</span>
+    <div class="book217__card">
+      <span class="eyebrow">Varaukset</span>
+      <h2>Jaa hetki meidän kanssamme</h2>
+      <p>
+        Meillä saa viipyä. Pöytä on sinun koko illaksi — ei kiirettä, ei
+        kahden tunnin rajaa. Varaa etukäteen, niin pidämme parhaan nurkan sinulle;
+        pienelle porukalle löytyy paikka usein samana iltanakin.
+      </p>
+      <a class="btn btn--solid" href="mailto:hola@callesol.demo">Varaa pöytä</a>
+    </div>
+  </section>
+
+  <!-- ====== NOSTOT ====== -->
+  <section class="nostot" id="yhteys">
+    <article class="nostot__item">
+      <span class="eyebrow">01</span>
+      <h3>Ruokalista</h3>
+      <p>Pieniä lautasia jaettavaksi, vaihtuva luonnonviinilista ja kauden raaka-aineet.</p>
+      <a class="nostot__link" href="menu.html">Katso ruokalista</a>
+    </article>
+    <article class="nostot__item">
+      <span class="eyebrow">02</span>
+      <h3>Sijainti</h3>
+      <p>Aurinkokatu 1, Helsinki. Raitiovaunupysäkki oven edessä, terassi kesällä.</p>
+      <a class="nostot__link" href="#">Näytä kartalla</a>
+    </article>
+    <article class="nostot__item">
+      <span class="eyebrow">03</span>
+      <h3>Yhteystiedot</h3>
+      <p>Varaukset ja yksityistilaisuudet sähköpostilla tai puhelimitse.</p>
+      <a class="nostot__link" href="mailto:hola@callesol.demo">Ota yhteyttä</a>
+    </article>
+  </section>
+
+  <!-- ====== 908 · MISSIOLAUSE ====== -->
+  <section class="mission908">
+    <span class="logomask mission908__mark" aria-hidden="true"></span>
+    <span class="kuvatag">kuva 11</span>
+    <h2>Hetket on tehty jaettaviksi.</h2>
+  </section>
+
+  <!-- ====== 303 · FOOTER (kaikkiin sivuihin) ====== -->
+  <footer class="footer303">
+    <div class="footer303__main">
+      <div>
+        <span class="footer303__logo logomask" role="img" aria-label="Calle Sol"></span>
+      </div>
+      <div class="col">
+        <h4>Ravintola</h4>
+        <a href="menu.html">Ruokalista</a>
+        <a href="menu.html">Viinilista</a>
+        <a href="meista.html">Meistä</a>
+      </div>
+      <div class="col">
+        <h4>Vieraile</h4>
+        <a href="#aukiolo">Aukioloajat</a>
+        <a href="#yhteys">Sijainti</a>
+        <a href="#varaa">Varaa pöytä</a>
+      </div>
+      <div>
+        <p class="footer303__desc">
+          Tapas &amp; viinibaari aurinkokadun varrella. Pieniä lautasia, isoja
+          iltoja, jaettuja hetkiä.
+        </p>
+        <div class="footer303__social">
+          <a href="#">IG</a>
+          <a href="#">FB</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer303__legal">
+      <span>© 2026 Calle Sol — demo</span>
+      <span>Suunnittelu · Studio Blomma</span>
+      <span>Tietosuoja · Saavutettavuus</span>
     </div>
   </footer>
 

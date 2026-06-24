@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calle Sol — Ota yhteyttä (demo)</title>
-  <meta name="description" content="Calle Sol — yhteystiedot, aukioloajat ja pöytävaraus. Flemminginkatu 29, Helsinki Kallio. (Blomman demokonsepti.)" />
+  <title>Calle Sol — Contact (demo)</title>
+  <meta name="description" content="Calle Sol — contact, opening hours and table booking. Flemminginkatu 29, Helsinki Kallio. (Studio Blomma demo concept.)" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Work+Sans:wght@400;500;600&family=Shantell+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="sivut.css" />
+  <script src="lang.js"></script>
 </head>
 <body>
 
   <!-- ====== DEMO-MUISTUTUS ====== -->
   <div class="demo-bar">
-    <b>Demo</b> — Calle Sol on Studio Blomman demokonsepti, ei oikea ravintola
+    <b>Demo</b>
+    <span data-l="en"> — Calle Sol is a Studio Blomma demo concept, not a real restaurant</span>
+    <span data-l="fi"> — Calle Sol on Studio Blomman demokonsepti, ei oikea ravintola</span>
   </div>
 
   <!-- ====== YLÄNAVI ====== -->
   <nav class="topnav">
     <a href="index.html"><span class="topnav__logo logomask" role="img" aria-label="Calle Sol"></span></a>
     <div class="topnav__links">
-      <a href="index.html">Etusivu</a>
-      <a href="menu.html">Ruokalista</a>
-      <a href="meista.html">Meistä</a>
-      <a href="yksityistilaisuudet.html">Yksityistilaisuudet</a>
-      <a href="ota-yhteytta.html">Ota yhteyttä</a>
-      <a class="is-cta" href="#varaa">Varaa pöytä</a>
+      <a href="index.html"><span data-l="en">Home</span><span data-l="fi">Etusivu</span></a>
+      <a href="menu.html"><span data-l="en">Menu</span><span data-l="fi">Ruokalista</span></a>
+      <a href="meista.html"><span data-l="en">About</span><span data-l="fi">Meistä</span></a>
+      <a href="yksityistilaisuudet.html"><span data-l="en">Private events</span><span data-l="fi">Yksityistilaisuudet</span></a>
+      <a href="ota-yhteytta.html"><span data-l="en">Contact</span><span data-l="fi">Ota yhteyttä</span></a>
+      <a class="is-cta" href="#varaa"><span data-l="en">Book a table</span><span data-l="fi">Varaa pöytä</span></a>
+      <span class="langtoggle">
+        <button type="button" data-setlang="en">EN</button>
+        <button type="button" data-setlang="fi">FI</button>
+      </span>
     </div>
   </nav>
 
@@ -37,42 +44,41 @@
     <!-- Vasen palsta: kartta (kuvan sijaan) -->
     <div class="kontakti209__map">
       <iframe
-        title="Calle Sol sijainti kartalla — Flemminginkatu 29, Helsinki"
+        title="Calle Sol on the map — Flemminginkatu 29, Helsinki"
         loading="lazy"
         src="https://www.openstreetmap.org/export/embed.html?bbox=24.9490%2C60.1855%2C24.9590%2C60.1900&layer=mapnik&marker=60.18775%2C24.9540"></iframe>
     </div>
 
     <!-- Oikea palsta: tumma info + varaus -->
     <div class="kontakti209__panel">
-      <span class="eyebrow">Ota yhteyttä</span>
-      <h2>Tervetuloa <em>kylään</em></h2>
+      <span class="eyebrow"><span data-l="en">Contact</span><span data-l="fi">Ota yhteyttä</span></span>
+      <h2><span data-l="en">Welcome to the <em>neighbourhood</em></span><span data-l="fi">Tervetuloa <em>kylään</em></span></h2>
 
       <div class="kontakti209__info">
         <div>
-          <h4>Aukioloajat</h4>
+          <h4><span data-l="en">Opening hours</span><span data-l="fi">Aukioloajat</span></h4>
           <p>
-            Ti–To · 16–23<br />
-            Pe–La · 14–01<br />
-            Su–Ma · suljettu
+            <span data-l="en">Tue–Thu · 16–23<br />Fri–Sat · 14–01<br />Sun–Mon · closed</span>
+            <span data-l="fi">Ti–To · 16–23<br />Pe–La · 14–01<br />Su–Ma · suljettu</span>
           </p>
         </div>
         <div>
-          <h4>Sijainti</h4>
+          <h4><span data-l="en">Location</span><span data-l="fi">Sijainti</span></h4>
           <p>
             Flemminginkatu 29<br />
             00530 Helsinki, Kallio<br />
-            <a href="https://www.openstreetmap.org/?mlat=60.18775&amp;mlon=24.9540#map=17/60.18775/24.9540" target="_blank" rel="noopener">Avaa kartta →</a>
+            <a href="https://www.openstreetmap.org/?mlat=60.18775&amp;mlon=24.9540#map=17/60.18775/24.9540" target="_blank" rel="noopener"><span data-l="en">Open map →</span><span data-l="fi">Avaa kartta →</span></a>
           </p>
         </div>
         <div>
-          <h4>Yhteystiedot</h4>
+          <h4><span data-l="en">Contact</span><span data-l="fi">Yhteystiedot</span></h4>
           <p>
             <a href="mailto:hola@callesol.demo">hola@callesol.demo</a><br />
             <a href="tel:+358000000000">+358 00 000 0000</a>
           </p>
         </div>
         <div>
-          <h4>Seuraa</h4>
+          <h4><span data-l="en">Follow</span><span data-l="fi">Seuraa</span></h4>
           <p>
             <a href="#">@callesol</a> · Instagram<br />
             <a href="#">Calle Sol</a> · Facebook
@@ -80,8 +86,8 @@
         </div>
       </div>
 
-      <a class="btn btn--solid" href="#varaa" onclick="alert('Demo: tähän avautuisi pöydänvarausjärjestelmä.'); return false;">Varaa pöytä</a>
-      <span class="kontakti209__note">Avaisi pöydänvarausjärjestelmän (demossa ei kytketty).</span>
+      <a class="btn btn--solid" href="#varaa" onclick="alert(document.documentElement.getAttribute('data-lang')==='fi' ? 'Demo: tähän avautuisi pöydänvarausjärjestelmä.' : 'Demo: a table reservation system would open here.'); return false;"><span data-l="en">Book a table</span><span data-l="fi">Varaa pöytä</span></a>
+      <span class="kontakti209__note"><span data-l="en">Would open the reservation system (not connected in the demo).</span><span data-l="fi">Avaisi pöydänvarausjärjestelmän (demossa ei kytketty).</span></span>
     </div>
   </section>
 
@@ -92,21 +98,21 @@
         <span class="footer303__logo logomask" role="img" aria-label="Calle Sol"></span>
       </div>
       <div class="col">
-        <h4>Ravintola</h4>
-        <a href="menu.html">Ruokalista</a>
-        <a href="menu.html">Viinilista</a>
-        <a href="meista.html">Meistä</a>
+        <h4><span data-l="en">Restaurant</span><span data-l="fi">Ravintola</span></h4>
+        <a href="menu.html"><span data-l="en">Menu</span><span data-l="fi">Ruokalista</span></a>
+        <a href="menu.html"><span data-l="en">Wine list</span><span data-l="fi">Viinilista</span></a>
+        <a href="meista.html"><span data-l="en">About</span><span data-l="fi">Meistä</span></a>
       </div>
       <div class="col">
-        <h4>Vieraile</h4>
-        <a href="ota-yhteytta.html">Aukioloajat</a>
-        <a href="ota-yhteytta.html">Sijainti</a>
-        <a href="#varaa">Varaa pöytä</a>
+        <h4><span data-l="en">Visit</span><span data-l="fi">Vieraile</span></h4>
+        <a href="index.html#aukiolo"><span data-l="en">Opening hours</span><span data-l="fi">Aukioloajat</span></a>
+        <a href="ota-yhteytta.html"><span data-l="en">Location</span><span data-l="fi">Sijainti</span></a>
+        <a href="#varaa"><span data-l="en">Book a table</span><span data-l="fi">Varaa pöytä</span></a>
       </div>
       <div>
         <p class="footer303__desc">
-          Tapas &amp; viinibaari aurinkokadun varrella. Pieniä lautasia, isoja
-          iltoja, jaettuja hetkiä.
+          <span data-l="en">Tapas &amp; wine bar on the sunny street. Small plates, big nights, shared moments.</span>
+          <span data-l="fi">Tapas &amp; viinibaari aurinkokadun varrella. Pieniä lautasia, isoja iltoja, jaettuja hetkiä.</span>
         </p>
         <div class="footer303__social">
           <a href="#">IG</a>
@@ -117,8 +123,8 @@
     </div>
     <div class="footer303__legal">
       <span>© 2026 Calle Sol — demo</span>
-      <span>Suunnittelu · Studio Blomma</span>
-      <span>Tietosuoja · Saavutettavuus</span>
+      <span><span data-l="en">Design</span><span data-l="fi">Suunnittelu</span> · Studio Blomma</span>
+      <span><span data-l="en">Privacy · Accessibility</span><span data-l="fi">Tietosuoja · Saavutettavuus</span></span>
     </div>
   </footer>
 

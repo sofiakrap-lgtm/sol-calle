@@ -1,91 +1,96 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calle Sol — Meistä (demo)</title>
-  <meta name="description" content="Calle Sol — kahden veljeksen tapasbaari. Värikäs, aurinkoinen ja ihmisläheinen pala latinalaista kulttuuria Helsingissä. (Blomman demokonsepti.)" />
+  <title>Calle Sol — About (demo)</title>
+  <meta name="description" content="Calle Sol — a tapas bar built by two brothers. A colourful, sunny and people-first slice of Latin culture in Helsinki. (Studio Blomma demo concept.)" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Work+Sans:wght@400;500;600&family=Shantell+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="sivut.css" />
+  <script src="lang.js"></script>
 </head>
 <body>
 
   <!-- ====== DEMO-MUISTUTUS ====== -->
   <div class="demo-bar">
-    <b>Demo</b> — Calle Sol on Studio Blomman demokonsepti, ei oikea ravintola
+    <b>Demo</b>
+    <span data-l="en"> — Calle Sol is a Studio Blomma demo concept, not a real restaurant</span>
+    <span data-l="fi"> — Calle Sol on Studio Blomman demokonsepti, ei oikea ravintola</span>
   </div>
 
   <!-- ====== YLÄNAVI ====== -->
   <nav class="topnav">
     <a href="index.html"><span class="topnav__logo logomask" role="img" aria-label="Calle Sol"></span></a>
     <div class="topnav__links">
-      <a href="index.html">Etusivu</a>
-      <a href="menu.html">Ruokalista</a>
-      <a href="meista.html">Meistä</a>
-      <a href="index.html#yhteys">Yhteystiedot</a>
-      <a class="is-cta" href="index.html#varaa">Varaa pöytä</a>
+      <a href="index.html"><span data-l="en">Home</span><span data-l="fi">Etusivu</span></a>
+      <a href="menu.html"><span data-l="en">Menu</span><span data-l="fi">Ruokalista</span></a>
+      <a href="meista.html"><span data-l="en">About</span><span data-l="fi">Meistä</span></a>
+      <a href="yksityistilaisuudet.html"><span data-l="en">Private events</span><span data-l="fi">Yksityistilaisuudet</span></a>
+      <a href="ota-yhteytta.html"><span data-l="en">Contact</span><span data-l="fi">Ota yhteyttä</span></a>
+      <a class="is-cta" href="ota-yhteytta.html#varaa"><span data-l="en">Book a table</span><span data-l="fi">Varaa pöytä</span></a>
+      <span class="langtoggle">
+        <button type="button" data-setlang="en">EN</button>
+        <button type="button" data-setlang="fi">FI</button>
+      </span>
     </div>
   </nav>
 
   <!-- ====== 205 · ESITTELY (kuva vasen) ====== -->
   <section class="intro205 intro205--kuvavasen">
     <div class="intro205__text">
-      <span class="eyebrow">Meistä</span>
-      <h2>Kaikki alkoi<br /><em>lapsuudesta</em></h2>
+      <span class="eyebrow"><span data-l="en">About</span><span data-l="fi">Meistä</span></span>
+      <h2>
+        <span data-l="en">It all began<br />in <em>childhood</em></span>
+        <span data-l="fi">Kaikki alkoi<br /><em>lapsuudesta</em></span>
+      </h2>
       <p class="intro205__body">
-        Calle Sol on rakennettu kahden veljeksen voimin. Rakkaus ruokaan syntyi
-        jo lapsuuden keittiössä — perheen pöydässä, jossa kaikki kerääntyivät
-        yhteen tuoksujen ja tarinoiden äärelle. Halusimme tuoda palan
-        latinalaista kulttuuria Helsinkiin: kavereita, perhettä ja seuraa hyvän
-        ruoan ja juoman äärellä, hieman fiinimmällä tyylillä. Värikkäästi,
-        aurinkoisesti ja ihmisläheisesti.
+        <span data-l="en">Calle Sol was built by two brothers. Our love of food was born in the kitchen of our childhood — at the family table where everyone gathered around the aromas and the stories. We wanted to bring a slice of Latin culture to Helsinki: friends, family and good company over great food and drink, with a slightly finer touch. Colourful, sunny and people-first.</span>
+        <span data-l="fi">Calle Sol on rakennettu kahden veljeksen voimin. Rakkaus ruokaan syntyi jo lapsuuden keittiössä — perheen pöydässä, jossa kaikki kerääntyivät yhteen tuoksujen ja tarinoiden äärelle. Halusimme tuoda palan latinalaista kulttuuria Helsinkiin: kavereita, perhettä ja seuraa hyvän ruoan ja juoman äärellä, hieman fiinimmällä tyylillä. Värikkäästi, aurinkoisesti ja ihmisläheisesti.</span>
       </p>
       <div class="intro205__btns">
-        <a class="btn" href="menu.html">Ruokalista</a>
-        <a class="btn btn--solid" href="index.html#varaa">Varaa pöytä</a>
+        <a class="btn" href="menu.html"><span data-l="en">Menu</span><span data-l="fi">Ruokalista</span></a>
+        <a class="btn btn--solid" href="ota-yhteytta.html#varaa"><span data-l="en">Book a table</span><span data-l="fi">Varaa pöytä</span></a>
       </div>
     </div>
-    <div class="intro205__img" style="position:relative; background-image:url('assets/kuvat/kuva-1.webp')">
-      <span class="kuvatag">kuva 1</span>
-    </div>
+    <div class="intro205__img" style="background-image:url('assets/kuvat/kuva-1.webp')"></div>
   </section>
 
   <!-- ====== 701 · ARVOT (avattavat) ====== -->
   <section class="arvot701">
-    <span class="eyebrow">Mihin uskomme</span>
+    <span class="eyebrow"><span data-l="en">What we believe in</span><span data-l="fi">Mihin uskomme</span></span>
     <div class="arvot701__grid">
       <div class="arvot701__col">
         <details open>
-          <summary>Raaka-aineet</summary>
+          <summary><span data-l="en">Ingredients</span><span data-l="fi">Raaka-aineet</span></summary>
           <p>
-            Lähituottajat, sesonki ja ei kompromisseja. Hyvä ilta alkaa hyvästä
-            raaka-aineesta — siitä emme tingi.
+            <span data-l="en">Local producers, the season, no compromises. A good evening starts with a good ingredient — and that we won't cut.</span>
+            <span data-l="fi">Lähituottajat, sesonki ja ei kompromisseja. Hyvä ilta alkaa hyvästä raaka-aineesta — siitä emme tingi.</span>
           </p>
-          <span class="sign">— pellolta pöytään</span>
+          <span class="sign"><span data-l="en">— from field to table</span><span data-l="fi">— pellolta pöytään</span></span>
         </details>
       </div>
       <div class="arvot701__col">
         <details>
-          <summary>Perhe</summary>
+          <summary><span data-l="en">Family</span><span data-l="fi">Perhe</span></summary>
           <p>
-            Kaksi veljestä, yksi keittiö ja koko kylä saman pöydän ääressä.
-            Meille jokainen vieras on osa perhettä.
+            <span data-l="en">Two brothers, one kitchen and the whole village around the same table. To us, every guest is part of the family.</span>
+            <span data-l="fi">Kaksi veljestä, yksi keittiö ja koko kylä saman pöydän ääressä. Meille jokainen vieras on osa perhettä.</span>
           </p>
-          <span class="sign">— casa es tu casa</span>
+          <span class="sign">— mi casa es tu casa</span>
         </details>
       </div>
       <div class="arvot701__col">
         <details>
-          <summary>Jaetut hetket</summary>
+          <summary><span data-l="en">Shared moments</span><span data-l="fi">Jaetut hetket</span></summary>
           <p>
-            Pieniä lautasia keskelle pöytää, lasit täyteen ja illat venymään.
-            Parhaat hetket syntyvät, kun ne jaetaan.
+            <span data-l="en">Small plates in the middle of the table, glasses full and evenings that stretch on. The best moments are the ones we share.</span>
+            <span data-l="fi">Pieniä lautasia keskelle pöytää, lasit täyteen ja illat venymään. Parhaat hetket syntyvät, kun ne jaetaan.</span>
           </p>
-          <span class="sign">— hetket on tehty jaettaviksi</span>
+          <span class="sign"><span data-l="en">— moments are made for sharing</span><span data-l="fi">— hetket on tehty jaettaviksi</span></span>
         </details>
       </div>
     </div>
@@ -94,23 +99,21 @@
   <!-- ====== 205 · RAAKA-AINEET (puolikkaat päittäin, kuva oikea) ====== -->
   <section class="intro205">
     <div class="intro205__text">
-      <span class="eyebrow">Raaka-aineet</span>
-      <h2>Raaka-aine on<br /><em>kaiken a ja o</em></h2>
+      <span class="eyebrow"><span data-l="en">Ingredients</span><span data-l="fi">Raaka-aineet</span></span>
+      <h2>
+        <span data-l="en">The ingredient is<br /><em>everything</em></span>
+        <span data-l="fi">Raaka-aine on<br /><em>kaiken a ja o</em></span>
+      </h2>
       <p class="intro205__body">
-        Meille raaka-aine on kaiken lähtökohta. Valitsemme sesongin parhaat,
-        suosimme lähituottajia ja annamme makujen puhua puolestaan. Tomaatti
-        kypsänä, oliiviöljy tuoreena, kala päivän saaliista — yksinkertaista,
-        mutta tehtynä rakkaudella. Se on tapamme kunnioittaa sekä ruokaa että
-        sen tekijöitä.
+        <span data-l="en">For us the ingredient is where it all starts. We pick the best of the season, favour local producers and let the flavours speak for themselves. A ripe tomato, fresh olive oil, fish from the day's catch — simple, but made with love. It's our way of honouring both the food and the people who make it.</span>
+        <span data-l="fi">Meille raaka-aine on kaiken lähtökohta. Valitsemme sesongin parhaat, suosimme lähituottajia ja annamme makujen puhua puolestaan. Tomaatti kypsänä, oliiviöljy tuoreena, kala päivän saaliista — yksinkertaista, mutta tehtynä rakkaudella. Se on tapamme kunnioittaa sekä ruokaa että sen tekijöitä.</span>
       </p>
       <div class="intro205__btns">
-        <a class="btn" href="menu.html">Ruokalista</a>
-        <a class="btn btn--solid" href="index.html#varaa">Varaa pöytä</a>
+        <a class="btn" href="menu.html"><span data-l="en">Menu</span><span data-l="fi">Ruokalista</span></a>
+        <a class="btn btn--solid" href="ota-yhteytta.html#varaa"><span data-l="en">Book a table</span><span data-l="fi">Varaa pöytä</span></a>
       </div>
     </div>
-    <div class="intro205__img" style="position:relative; background-image:url('assets/kuvat/kuva-9.webp')">
-      <span class="kuvatag">kuva 9</span>
-    </div>
+    <div class="intro205__img" style="background-image:url('assets/kuvat/kuva-9.webp')"></div>
   </section>
 
   <!-- ====== 303 · FOOTER ====== -->
@@ -120,21 +123,21 @@
         <span class="footer303__logo logomask" role="img" aria-label="Calle Sol"></span>
       </div>
       <div class="col">
-        <h4>Ravintola</h4>
-        <a href="menu.html">Ruokalista</a>
-        <a href="menu.html">Viinilista</a>
-        <a href="meista.html">Meistä</a>
+        <h4><span data-l="en">Restaurant</span><span data-l="fi">Ravintola</span></h4>
+        <a href="menu.html"><span data-l="en">Menu</span><span data-l="fi">Ruokalista</span></a>
+        <a href="menu.html"><span data-l="en">Wine list</span><span data-l="fi">Viinilista</span></a>
+        <a href="meista.html"><span data-l="en">About</span><span data-l="fi">Meistä</span></a>
       </div>
       <div class="col">
-        <h4>Vieraile</h4>
-        <a href="index.html#aukiolo">Aukioloajat</a>
-        <a href="index.html#yhteys">Sijainti</a>
-        <a href="index.html#varaa">Varaa pöytä</a>
+        <h4><span data-l="en">Visit</span><span data-l="fi">Vieraile</span></h4>
+        <a href="index.html#aukiolo"><span data-l="en">Opening hours</span><span data-l="fi">Aukioloajat</span></a>
+        <a href="ota-yhteytta.html"><span data-l="en">Location</span><span data-l="fi">Sijainti</span></a>
+        <a href="ota-yhteytta.html#varaa"><span data-l="en">Book a table</span><span data-l="fi">Varaa pöytä</span></a>
       </div>
       <div>
         <p class="footer303__desc">
-          Tapas &amp; viinibaari aurinkokadun varrella. Pieniä lautasia, isoja
-          iltoja, jaettuja hetkiä.
+          <span data-l="en">Tapas &amp; wine bar on the sunny street. Small plates, big nights, shared moments.</span>
+          <span data-l="fi">Tapas &amp; viinibaari aurinkokadun varrella. Pieniä lautasia, isoja iltoja, jaettuja hetkiä.</span>
         </p>
         <div class="footer303__social">
           <a href="#">IG</a>
@@ -145,8 +148,8 @@
     </div>
     <div class="footer303__legal">
       <span>© 2026 Calle Sol — demo</span>
-      <span>Suunnittelu · Studio Blomma</span>
-      <span>Tietosuoja · Saavutettavuus</span>
+      <span><span data-l="en">Design</span><span data-l="fi">Suunnittelu</span> · Studio Blomma</span>
+      <span><span data-l="en">Privacy · Accessibility</span><span data-l="fi">Tietosuoja · Saavutettavuus</span></span>
     </div>
   </footer>
 

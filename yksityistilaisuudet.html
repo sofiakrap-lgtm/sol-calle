@@ -1,106 +1,129 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calle Sol — Yksityistilaisuudet &amp; catering (demo)</title>
-  <meta name="description" content="Calle Sol — yksityistilaisuudet ja catering. Jaa elämäsi tärkeimmät hetket meidän kanssamme. (Blomman demokonsepti.)" />
+  <title>Calle Sol — Private events &amp; catering (demo)</title>
+  <meta name="description" content="Calle Sol — private events and catering. Share life's biggest moments with us. (Studio Blomma demo concept.)" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Work+Sans:wght@400;500;600&family=Shantell+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="sivut.css" />
+  <script src="lang.js"></script>
 </head>
 <body>
 
   <!-- ====== DEMO-MUISTUTUS ====== -->
   <div class="demo-bar">
-    <b>Demo</b> — Calle Sol on Studio Blomman demokonsepti, ei oikea ravintola
+    <b>Demo</b>
+    <span data-l="en"> — Calle Sol is a Studio Blomma demo concept, not a real restaurant</span>
+    <span data-l="fi"> — Calle Sol on Studio Blomman demokonsepti, ei oikea ravintola</span>
   </div>
 
   <!-- ====== YLÄNAVI ====== -->
   <nav class="topnav">
     <a href="index.html"><span class="topnav__logo logomask" role="img" aria-label="Calle Sol"></span></a>
     <div class="topnav__links">
-      <a href="index.html">Etusivu</a>
-      <a href="menu.html">Ruokalista</a>
-      <a href="meista.html">Meistä</a>
-      <a href="yksityistilaisuudet.html">Yksityistilaisuudet</a>
-      <a class="is-cta" href="index.html#varaa">Varaa pöytä</a>
+      <a href="index.html"><span data-l="en">Home</span><span data-l="fi">Etusivu</span></a>
+      <a href="menu.html"><span data-l="en">Menu</span><span data-l="fi">Ruokalista</span></a>
+      <a href="meista.html"><span data-l="en">About</span><span data-l="fi">Meistä</span></a>
+      <a href="yksityistilaisuudet.html"><span data-l="en">Private events</span><span data-l="fi">Yksityistilaisuudet</span></a>
+      <a href="ota-yhteytta.html"><span data-l="en">Contact</span><span data-l="fi">Ota yhteyttä</span></a>
+      <a class="is-cta" href="ota-yhteytta.html#varaa"><span data-l="en">Book a table</span><span data-l="fi">Varaa pöytä</span></a>
+      <span class="langtoggle">
+        <button type="button" data-setlang="en">EN</button>
+        <button type="button" data-setlang="fi">FI</button>
+      </span>
     </div>
   </nav>
 
   <!-- ====== 802 · YKSITYISTILAISUUDET ====== -->
   <section class="cta802">
     <div class="cta802__text">
-      <span class="eyebrow">Yksityistilaisuudet</span>
-      <h2>Jaa elämäsi <em>tärkeimmät</em> hetket meidän kanssamme</h2>
+      <span class="eyebrow"><span data-l="en">Private events</span><span data-l="fi">Yksityistilaisuudet</span></span>
+      <h2>
+        <span data-l="en">Share life's <em>biggest</em> moments with us</span>
+        <span data-l="fi">Jaa elämäsi <em>tärkeimmät</em> hetket meidän kanssamme</span>
+      </h2>
       <p>
-        Me pidämme huolen, että kaikki viihtyvät. Olipa kyseessä syntymäpäivät,
-        kihlajaiset, ristiäiset, valmistujaiset tai firman pikkujoulut — katamme
-        pöydän juuri sinun porukallesi. Koko ravintolan voi varata yksityiskäyttöön,
-        tai rajata oman nurkkauksen pienemmälle seurueelle. Räätälöimme menun,
-        viinit ja tunnelman toiveidesi mukaan.
+        <span data-l="en">We'll make sure everyone has a good time. Birthdays, engagements, christenings, graduations or the office Christmas party — we set the table just for your group. Book the whole restaurant for a private event, or reserve a cosy corner for a smaller party. We tailor the menu, the wines and the mood to your wishes.</span>
+        <span data-l="fi">Me pidämme huolen, että kaikki viihtyvät. Olipa kyseessä syntymäpäivät, kihlajaiset, ristiäiset, valmistujaiset tai firman pikkujoulut — katamme pöydän juuri sinun porukallesi. Koko ravintolan voi varata yksityiskäyttöön, tai rajata oman nurkkauksen pienemmälle seurueelle. Räätälöimme menun, viinit ja tunnelman toiveidesi mukaan.</span>
       </p>
-      <a class="btn btn--solid" href="#varaa">Kysy tarjous</a>
+      <a class="btn btn--solid" href="ota-yhteytta.html#varaa"><span data-l="en">Ask for a quote</span><span data-l="fi">Kysy tarjous</span></a>
     </div>
-    <div class="cta802__img" style="background-image:url('assets/kuvat/kuva-3.webp')">
-      <span class="kuvatag">kuva 3</span>
-    </div>
+    <div class="cta802__img" style="background-image:url('assets/kuvat/kuva-3.webp')"></div>
   </section>
 
   <!-- ====== 904 · CATERING (4 grafiikkaa) ====== -->
   <section class="value904">
     <div class="value904__head">
-      <h2>Tarjoamme myös <em>cateringia</em></h2>
-      <p>Tuomme Calle Solin maut sinne, missä sinä juhlit — kotiin, kokoukseen tai juhlasaliin.</p>
+      <h2><span data-l="en">We also offer <em>catering</em></span><span data-l="fi">Tarjoamme myös <em>cateringia</em></span></h2>
+      <p>
+        <span data-l="en">We bring the flavours of Calle Sol wherever you celebrate — home, the office or the party hall.</span>
+        <span data-l="fi">Tuomme Calle Solin maut sinne, missä sinä juhlit — kotiin, kokoukseen tai juhlasaliin.</span>
+      </p>
     </div>
     <div class="value904__grid">
       <div class="value904__col">
         <span class="logomask g-rosmariini value904__ico" aria-hidden="true"></span>
-        <h3>Illallinen kotiin</h3>
-        <p>Saat viiden ruokalajin espanjalaisen illallisen suoraan kotiovellesi — me katamme, sinä nautit.</p>
+        <h3><span data-l="en">Dinner at home</span><span data-l="fi">Illallinen kotiin</span></h3>
+        <p>
+          <span data-l="en">A five-course Spanish dinner delivered straight to your door — we set the table, you enjoy.</span>
+          <span data-l="fi">Saat viiden ruokalajin espanjalaisen illallisen suoraan kotiovellesi — me katamme, sinä nautit.</span>
+        </p>
       </div>
       <div class="value904__col">
         <span class="logomask g-tapas value904__ico" aria-hidden="true"></span>
-        <h3>Pikkupurtavaa</h3>
-        <p>Tapaslautasia ja sormiruokaa kokouksiin ja tapahtumiin. Kerro montako olette, me hoidamme loput.</p>
+        <h3><span data-l="en">Finger food</span><span data-l="fi">Pikkupurtavaa</span></h3>
+        <p>
+          <span data-l="en">Tapas plates and finger food for meetings and events. Tell us how many you are, we'll handle the rest.</span>
+          <span data-l="fi">Tapaslautasia ja sormiruokaa kokouksiin ja tapahtumiin. Kerro montako olette, me hoidamme loput.</span>
+        </p>
       </div>
       <div class="value904__col">
         <span class="logomask g-viinilasi value904__ico" aria-hidden="true"></span>
-        <h3>Viininmaistajaiset</h3>
-        <p>Tule maistamaan ihania espanjalaisia luonnonviinejä paikan päällä, sommelierimme ohjaamana.</p>
+        <h3><span data-l="en">Wine tastings</span><span data-l="fi">Viininmaistajaiset</span></h3>
+        <p>
+          <span data-l="en">Come and taste wonderful Spanish natural wines on site, guided by our sommelier.</span>
+          <span data-l="fi">Tule maistamaan ihania espanjalaisia luonnonviinejä paikan päällä, sommelierimme ohjaamana.</span>
+        </p>
       </div>
       <div class="value904__col">
         <span class="logomask g-aterimet value904__ico" aria-hidden="true"></span>
-        <h3>Kunnon ruokailut</h3>
-        <p>Häihin ja suuriin juhliin lämmin, huoliteltu menu alkupaloista jälkiruokaan — tarjoiluineen.</p>
+        <h3><span data-l="en">Proper feasts</span><span data-l="fi">Kunnon ruokailut</span></h3>
+        <p>
+          <span data-l="en">For weddings and grand celebrations, a warm, polished menu from starters to dessert — service included.</span>
+          <span data-l="fi">Häihin ja suuriin juhliin lämmin, huoliteltu menu alkupaloista jälkiruokaan — tarjoiluineen.</span>
+        </p>
       </div>
     </div>
   </section>
 
   <!-- ====== 802 · LÄHINAAPURI (puolikkaat päittäin, kuva vasen) ====== -->
   <section class="cta802 cta802--flip">
-    <div class="cta802__img" style="background-image:url('assets/kuvat/kuva-4.webp')">
-      <span class="kuvatag">kuva 4</span>
-    </div>
+    <div class="cta802__img" style="background-image:url('assets/kuvat/kuva-4.webp')"></div>
     <div class="cta802__text">
-      <span class="eyebrow">Naapurissa</span>
-      <h2>Löydä uusi <em>kaveri</em> lähinaapurista</h2>
+      <span class="eyebrow"><span data-l="en">In the neighbourhood</span><span data-l="fi">Naapurissa</span></span>
+      <h2>
+        <span data-l="en">Find a new <em>friend</em> next door</span>
+        <span data-l="fi">Löydä uusi <em>kaveri</em> lähinaapurista</span>
+      </h2>
       <p>
-        Sijaitsemme aurinkoisessa Helsingin Kalliossa, osoitteessa Flemminginkatu 29.
-        Olemme se lähibaari, johon on helppo pörähtää työpäivän jälkeen tai jäädä
-        koko illaksi. Tule yksin, kaksin tai koko porukalla — täällä tutustut aina
-        uuteen naapuriin viinilasin äärellä.
+        <span data-l="en">We're in sunny Kallio, Helsinki, at Flemminginkatu 29. We're the local spot that's easy to drop into after work, or to settle in for the whole evening. Come alone, as a pair or with the whole crew — here you always meet a new neighbour over a glass of wine.</span>
+        <span data-l="fi">Sijaitsemme aurinkoisessa Helsingin Kalliossa, osoitteessa Flemminginkatu 29. Olemme se lähibaari, johon on helppo pörähtää työpäivän jälkeen tai jäädä koko illaksi. Tule yksin, kaksin tai koko porukalla — täällä tutustut aina uuteen naapuriin viinilasin äärellä.</span>
       </p>
-      <a class="btn btn--solid" href="index.html#varaa">Varaa pöytä</a>
+      <a class="btn btn--solid" href="ota-yhteytta.html#varaa"><span data-l="en">Book a table</span><span data-l="fi">Varaa pöytä</span></a>
     </div>
   </section>
 
   <!-- ====== 208 · INTRO-LAUSE (tausta väri 10, teksti väri 1) ====== -->
   <section class="intro208" style="background:var(--vari-10); color:var(--vari-1)">
-    <p>Parhaat juhlat eivät jää mieleen menusta, vaan <em>tunnelmasta</em> jonka jaoimme.</p>
+    <p>
+      <span data-l="en">The best parties aren't remembered for the menu, but for the <em>feeling</em> we shared.</span>
+      <span data-l="fi">Parhaat juhlat eivät jää mieleen menusta, vaan <em>tunnelmasta</em> jonka jaoimme.</span>
+    </p>
   </section>
 
   <!-- ====== 303 · FOOTER ====== -->
@@ -110,21 +133,21 @@
         <span class="footer303__logo logomask" role="img" aria-label="Calle Sol"></span>
       </div>
       <div class="col">
-        <h4>Ravintola</h4>
-        <a href="menu.html">Ruokalista</a>
-        <a href="menu.html">Viinilista</a>
-        <a href="meista.html">Meistä</a>
+        <h4><span data-l="en">Restaurant</span><span data-l="fi">Ravintola</span></h4>
+        <a href="menu.html"><span data-l="en">Menu</span><span data-l="fi">Ruokalista</span></a>
+        <a href="menu.html"><span data-l="en">Wine list</span><span data-l="fi">Viinilista</span></a>
+        <a href="meista.html"><span data-l="en">About</span><span data-l="fi">Meistä</span></a>
       </div>
       <div class="col">
-        <h4>Vieraile</h4>
-        <a href="index.html#aukiolo">Aukioloajat</a>
-        <a href="index.html#yhteys">Sijainti</a>
-        <a href="index.html#varaa">Varaa pöytä</a>
+        <h4><span data-l="en">Visit</span><span data-l="fi">Vieraile</span></h4>
+        <a href="index.html#aukiolo"><span data-l="en">Opening hours</span><span data-l="fi">Aukioloajat</span></a>
+        <a href="ota-yhteytta.html"><span data-l="en">Location</span><span data-l="fi">Sijainti</span></a>
+        <a href="ota-yhteytta.html#varaa"><span data-l="en">Book a table</span><span data-l="fi">Varaa pöytä</span></a>
       </div>
       <div>
         <p class="footer303__desc">
-          Tapas &amp; viinibaari aurinkokadun varrella. Pieniä lautasia, isoja
-          iltoja, jaettuja hetkiä.
+          <span data-l="en">Tapas &amp; wine bar on the sunny street. Small plates, big nights, shared moments.</span>
+          <span data-l="fi">Tapas &amp; viinibaari aurinkokadun varrella. Pieniä lautasia, isoja iltoja, jaettuja hetkiä.</span>
         </p>
         <div class="footer303__social">
           <a href="#">IG</a>
@@ -135,8 +158,8 @@
     </div>
     <div class="footer303__legal">
       <span>© 2026 Calle Sol — demo</span>
-      <span>Suunnittelu · Studio Blomma</span>
-      <span>Tietosuoja · Saavutettavuus</span>
+      <span><span data-l="en">Design</span><span data-l="fi">Suunnittelu</span> · Studio Blomma</span>
+      <span><span data-l="en">Privacy · Accessibility</span><span data-l="fi">Tietosuoja · Saavutettavuus</span></span>
     </div>
   </footer>
 

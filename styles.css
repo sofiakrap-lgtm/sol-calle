@@ -55,6 +55,7 @@ body {
   color: var(--espresso);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  zoom: 0.8; /* nykyinen 80%-zoom uutena normina */
 }
 
 img { max-width: 100%; display: block; }

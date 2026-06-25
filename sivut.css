@@ -261,7 +261,7 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.01em;
   margin: 16px 0;
 }
-.intro205__text h2 em { font-family: var(--font-script); font-style: normal; text-transform: none; color: var(--vari-12); }
+.intro205__text h2 em { font-style: normal; text-transform: none; }
 .intro205__body {
   max-width: 42ch;
   font-size: 0.98rem;
@@ -530,7 +530,7 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(2.1rem, 4.4vw, 3.4rem);
   margin-bottom: 22px;
 }
-.cta802__text h2 em { font-family: var(--font-script); font-style: normal; color: var(--vari-12); }
+.cta802__text h2 em { font-style: normal; }
 .cta802__text p { font-size: 0.95rem; max-width: 46ch; margin-bottom: 28px; }
 .cta802__img {
   position: relative;
@@ -551,7 +551,7 @@ a { color: inherit; text-decoration: none; }
 }
 .value904__head { max-width: 56ch; margin: 0 auto clamp(36px, 5vw, 60px); }
 .value904__head h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
-.value904__head h2 em { font-family: var(--font-script); font-style: normal; color: var(--vari-12); }
+.value904__head h2 em { font-style: normal; }
 .value904__head p { margin-top: 14px; font-size: 0.92rem; }
 .value904__grid {
   max-width: var(--maxw);
@@ -587,7 +587,7 @@ a { color: inherit; text-decoration: none; }
   max-width: 24ch;
   margin: 0 auto;
 }
-.intro208 p em { font-family: var(--font-script); font-style: normal; font-weight: 600; }
+.intro208 p em { font-style: normal; font-weight: 600; }
 
 /* ========================================================================
    209 - OTA YHTEYTTÄ (vasen kartta + oikea tumma infopalsta)
@@ -614,7 +614,7 @@ a { color: inherit; text-decoration: none; }
 }
 .kontakti209__panel .eyebrow { color: var(--vari-4); }
 .kontakti209__panel h2 { font-size: clamp(2.1rem, 4.6vw, 3.5rem); margin: 14px 0 28px; }
-.kontakti209__panel h2 em { font-family: var(--font-script); font-style: normal; color: var(--vari-4); }
+.kontakti209__panel h2 em { font-style: normal; color: var(--vari-4); }
 .kontakti209__info {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -647,7 +647,7 @@ a { color: inherit; text-decoration: none; }
 .menu__head { text-align: center; margin-bottom: clamp(36px, 5vw, 64px); }
 .menu__head .eyebrow { color: var(--vari-2); }
 .menu__head h1 { font-size: clamp(2.6rem, 7vw, 4.8rem); margin: 12px 0 10px; }
-.menu__head h1 em { font-family: var(--font-script); font-style: normal; color: var(--vari-12); }
+.menu__head h1 em { font-style: normal; }
 .menu__head p { font-size: 0.95rem; max-width: 46ch; margin: 0 auto; }
 
 .menu__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 72px); align-items: start; }
@@ -673,7 +673,7 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px dashed color-mix(in srgb, var(--ink) 30%, transparent);
 }
 .menu__item .n { font-family: var(--font-display); font-weight: 600; font-size: 1rem; }
-.menu__item .price { font-family: var(--font-display); font-weight: 700; color: var(--vari-12); white-space: nowrap; }
+.menu__item .price { font-family: var(--font-display); font-weight: 700; color: var(--ink); white-space: nowrap; }
 .menu__item .d { grid-column: 1 / -1; font-size: 0.85rem; margin-top: 2px; color: color-mix(in srgb, var(--ink) 72%, transparent); }
 .menu__actions { text-align: center; margin-top: clamp(34px, 5vw, 56px); }
 

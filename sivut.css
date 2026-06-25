@@ -1,5 +1,5 @@
 /* =========================================================================
-   CALLE SOL — sivujärjestelmä (rakennekirjaston mukaiset sivut)
+   CALLE SOL - sivujärjestelmä (rakennekirjaston mukaiset sivut)
    Terävät reunat · ei animaatioita · Space Grotesk + Helvetica
    Värit numeroitu 1–12 (väri N). Oletukset: tausta = väri 7, teksti = väri 8.
    ========================================================================= */
@@ -24,15 +24,15 @@
   --ink:   var(--vari-2);   /* teksti / viivat / reunat / grafiikat */
 
   /* Fontit */
-  --font-display: "Poppins", system-ui, -apple-system, sans-serif;   /* fontti 1 — otsikot (Poppins Medium) */
-  --font-body:    "Work Sans", system-ui, -apple-system, sans-serif; /* fontti 3 — leipä (Work Sans) */
-  --font-script:  "Poppins", system-ui, -apple-system, sans-serif;   /* aksentit — sama kuin otsikot, ei erillistä fonttia */
+  --font-display: "Poppins", system-ui, -apple-system, sans-serif;   /* fontti 1 - otsikot (Poppins Medium) */
+  --font-body:    "Work Sans", system-ui, -apple-system, sans-serif; /* fontti 3 - leipä (Work Sans) */
+  --font-script:  "Poppins", system-ui, -apple-system, sans-serif;   /* aksentit - sama kuin otsikot, ei erillistä fonttia */
 
   --maxw: 1280px;
   --track: 0.22em; /* caps-harvennus (fontti 4) */
 }
 
-/* ---- Reset / perusta — terävät reunat, ei animaatioita ---------------- */
+/* ---- Reset / perusta - terävät reunat, ei animaatioita ---------------- */
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 *, *::before, *::after { border-radius: 0 !important; animation: none !important; transition: none !important; }
@@ -106,7 +106,7 @@ a { color: inherit; text-decoration: none; }
 .demo-bar b { color: var(--vari-4); }
 
 /* ========================================================================
-   107 — HERO (kaksi palstaa: vasen kuva + oikea kermalohko, iso logo)
+   107 - HERO (kaksi palstaa: vasen kuva + oikea kermalohko, iso logo)
    ======================================================================== */
 
 .hero107 {
@@ -210,7 +210,7 @@ a { color: inherit; text-decoration: none; }
 .topnav__links a.is-cta { background: var(--vari-2); color: var(--paper); padding: 0.7em 1.2em; font-weight: 700; }
 
 /* ========================================================================
-   205 — LYHYT ESITTELY (teksti vasen + kuva oikea)
+   205 - LYHYT ESITTELY (teksti vasen + kuva oikea)
    ======================================================================== */
 
 .intro205 {
@@ -270,7 +270,7 @@ a { color: inherit; text-decoration: none; }
 .intro205--kuvavasen .intro205__img  { order: 1; }
 
 /* ========================================================================
-   701 — ARVOT (3 saraketta, avattavat) · sovellettu sosiaalisen todisteen
+   701 - ARVOT (3 saraketta, avattavat) · sovellettu sosiaalisen todisteen
    testimonial-gridistä
    ======================================================================== */
 
@@ -288,7 +288,7 @@ a { color: inherit; text-decoration: none; }
 .arvot701__col { padding: 4px clamp(20px, 3vw, 44px); }
 .arvot701__col + .arvot701__col { border-left: 1.5px solid var(--ink); }
 
-/* Avattava arvo (ei animaatiota — natiivi details, välitön) */
+/* Avattava arvo (ei animaatiota - natiivi details, välitön) */
 .arvot701__col details { width: 100%; }
 .arvot701__col summary {
   list-style: none;
@@ -342,7 +342,7 @@ a { color: inherit; text-decoration: none; }
 .hours__closed { margin-top: 22px; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.6; }
 
 /* ========================================================================
-   217 — PIKALINKKI VARAUKSEEN (raidallinen tausta kuva 10 + vaalea kortti)
+   217 - PIKALINKKI VARAUKSEEN (raidallinen tausta kuva 10 + vaalea kortti)
    ======================================================================== */
 
 .book217 {
@@ -375,7 +375,7 @@ a { color: inherit; text-decoration: none; }
 .book217__card p { font-size: 0.96rem; max-width: 42ch; margin: 0 auto 26px; }
 
 /* ========================================================================
-   NOSTOT — ruokalista · sijainti · yhteystiedot
+   NOSTOT - ruokalista · sijainti · yhteystiedot
    ======================================================================== */
 
 .nostot {
@@ -399,7 +399,7 @@ a { color: inherit; text-decoration: none; }
 .nostot__link::after { content: " →"; }
 
 /* ========================================================================
-   908 — MISSIOLAUSE (full-bleed kuvatausta 11 + tumma verho)
+   908 - MISSIOLAUSE (full-bleed kuvatausta 11 + tumma verho)
    ======================================================================== */
 
 .mission908 {
@@ -425,7 +425,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ========================================================================
-   303 — FOOTER (kaikkiin sivuihin) · tausta väri 2, tekstit väri 7
+   303 - FOOTER (kaikkiin sivuihin) · tausta väri 2, tekstit väri 7
    ======================================================================== */
 
 .footer303 { background: var(--vari-2); color: var(--vari-7); }
@@ -479,11 +479,11 @@ a { color: inherit; text-decoration: none; }
   opacity: 0.7;
 }
 
-/* ---- Kuvapaikkamerkki-lappu (piilotettu — oikeat kuvat lisätty) ------- */
+/* ---- Kuvapaikkamerkki-lappu (piilotettu - oikeat kuvat lisätty) ------- */
 .kuvatag { display: none; }
 
 /* ========================================================================
-   802 — KONVERSIO / CTA (teksti + kuva). Flip-variantti: puolikkaat päittäin
+   802 - KONVERSIO / CTA (teksti + kuva). Flip-variantti: puolikkaat päittäin
    ======================================================================== */
 
 .cta802 {
@@ -514,7 +514,7 @@ a { color: inherit; text-decoration: none; }
 .cta802--flip .cta802__img  { order: 1; }
 
 /* ========================================================================
-   904 — VALUE PROPS (otsikko + 4 saraketta grafiikoilla)
+   904 - VALUE PROPS (otsikko + 4 saraketta grafiikoilla)
    ======================================================================== */
 
 .value904 {
@@ -544,7 +544,7 @@ a { color: inherit; text-decoration: none; }
 .g-aterimet   { -webkit-mask-image: url("assets/grafiikat/grafiikka-aterimet.svg");   mask-image: url("assets/grafiikat/grafiikka-aterimet.svg"); }
 
 /* ========================================================================
-   208 — KESKI / Intro-lause (yksi keskitetty lause, runsas tyhjä tila)
+   208 - KESKI / Intro-lause (yksi keskitetty lause, runsas tyhjä tila)
    ======================================================================== */
 
 .intro208 {
@@ -562,7 +562,7 @@ a { color: inherit; text-decoration: none; }
 .intro208 p em { font-family: var(--font-script); font-style: normal; font-weight: 600; }
 
 /* ========================================================================
-   209 — OTA YHTEYTTÄ (vasen kartta + oikea tumma infopalsta)
+   209 - OTA YHTEYTTÄ (vasen kartta + oikea tumma infopalsta)
    ======================================================================== */
 
 .kontakti209 {

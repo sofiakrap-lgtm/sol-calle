@@ -1,5 +1,5 @@
 /* =========================================================================
-   CALLE SOL — brändijärjestelmä
+   CALLE SOL - brändijärjestelmä
    Pidä visuaalisuus 100 % brändi-identiteetissä (ks. CLAUDE.md).
    ========================================================================= */
 
@@ -71,7 +71,7 @@ h3 { font-size: 1.35rem; }
 
 .brush { font-family: var(--font-brush); font-weight: 600; }
 
-/* Osiolabelit — VERSAALIT, harva kirjainväli */
+/* Osiolabelit - VERSAALIT, harva kirjainväli */
 .label {
   font-size: 0.78rem;
   font-weight: 700;
@@ -182,7 +182,7 @@ section { padding: clamp(56px, 8vw, 100px) 0; }
 .section-head { text-align: center; max-width: 60ch; margin: 0 auto 48px; }
 .section-head h2 { margin: 12px 0; }
 
-/* Kortit — pyöristetyt, editorial mutta lämmin */
+/* Kortit - pyöristetyt, editorial mutta lämmin */
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .card {
   background: #fff;
@@ -196,7 +196,7 @@ section { padding: clamp(56px, 8vw, 100px) 0; }
 .card h3 { margin: 14px 0 8px; }
 .card p { color: color-mix(in srgb, var(--espresso) 82%, transparent); }
 
-/* Tumma osio — Espresso */
+/* Tumma osio - Espresso */
 .dark { background: var(--espresso); color: var(--nuage-de-lait); }
 .dark .label { color: var(--miel-dore); }
 .dark .label::before { color: var(--bleu-porcelaine); }

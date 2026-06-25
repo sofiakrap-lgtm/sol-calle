@@ -167,15 +167,16 @@ a { color: inherit; text-decoration: none; }
   padding: 0.7em 1.2em;
   font-weight: 700;
 }
-/* iso logo, ankkuroitu alas, ulottuu vasemman palstan päälle */
+/* iso logo, keskitetty palstaan ja ankkuroitu osan alareunaan */
 .hero107__logo {
-  width: clamp(220px, 30vw, 440px);
-  height: clamp(150px, 22vw, 320px);
+  width: clamp(260px, 34vw, 520px);
+  height: clamp(180px, 26vw, 380px);
   color: var(--vari-2);
-  margin: 24px 0 -6px -22%;
+  align-self: center;
+  margin: 24px 0 0;
   -webkit-mask-image: url("assets/logot/logo-paalogo-ilman-sivutekstia.svg");
           mask-image: url("assets/logot/logo-paalogo-ilman-sivutekstia.svg");
-  -webkit-mask-position: left bottom; mask-position: left bottom;
+  -webkit-mask-position: center bottom; mask-position: center bottom;
 }
 
 /* ---- Ylänavi (alasivut: meistä, menu …) ------------------------------ */

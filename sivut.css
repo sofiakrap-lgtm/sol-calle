@@ -217,9 +217,7 @@ a { color: inherit; text-decoration: none; }
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
   gap: 0;
-  padding: clamp(40px, 6vw, 84px) clamp(20px, 5vw, 72px);
-  max-width: var(--maxw);
-  margin: 0 auto;
+  min-height: 68vh;
 }
 .intro205__text {
   display: flex;
@@ -227,7 +225,7 @@ a { color: inherit; text-decoration: none; }
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 clamp(12px, 4vw, 56px);
+  padding: clamp(40px, 6vw, 84px) clamp(24px, 5vw, 72px);
   order: 1;
 }
 .intro205__text h2 {

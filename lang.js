@@ -19,5 +19,14 @@
     var b = e.target.closest && e.target.closest('[data-setlang]');
     if (b) { e.preventDefault(); apply(b.getAttribute('data-setlang')); }
   });
-  document.addEventListener('DOMContentLoaded', function () { apply(root.getAttribute('data-lang') || 'en'); });
+  document.addEventListener('DOMContentLoaded', function () {
+    apply(root.getAttribute('data-lang') || 'en');
+    // Sticky-yläpalkki: näkyviin kun skrollataan alas
+    var top = document.getElementById('scrolltop');
+    if (top) {
+      var onScroll = function () { top.classList.toggle('is-visible', window.scrollY > 80); };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
+  });
 })();

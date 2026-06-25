@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Calle Sol, Värit (brändipaletti)</title>
-  <meta name="description" content="Calle Sol -brändin väripaletti: 6 kovaa väriarvoa CSS-muuttujineen ja käyttötarkoituksineen. (Blomman demokonsepti.)" />
+  <meta name="description" content="Calle Sol -brändin väripaletti: 14 väriä CSS-muuttujineen ja käyttötarkoituksineen. (Blomman demokonsepti.)" />
 
   <!-- Brändifontit: Shantell Sans (brush) + Hanken Grotesk (UI) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,8 +35,8 @@
       <span class="label">Brändipaletti</span>
       <h1>Calle Solin <span class="brush" style="color:var(--terre-cuite)">värit</span></h1>
       <p>
-        Kuusi kovaa väriarvoa, jotka kantavat koko brändin. Käytä aina
-        CSS-muuttujaa, älä kovakoodaa hexejä komponentteihin.
+        14 väriä, jotka kantavat koko brändin. Käytä aina
+        CSS-muuttujaa (--vari-N), älä kovakoodaa hexejä komponentteihin.
         <strong>Klikkaa korttia kopioidaksesi hex-koodin.</strong>
       </p>
     </div>
@@ -53,67 +53,47 @@
     <div class="wrap">
       <div class="section-head" style="text-align:left; margin-bottom:32px">
         <span class="label">Ydinpaletti</span>
-        <h2 style="margin-top:10px">Kuusi kovaa väriarvoa</h2>
+        <h2 style="margin-top:10px">Värit 1–4</h2>
       </div>
       <div class="swatch-grid">
 
         <article class="swatch" data-hex="#FEFAF0">
-          <div class="swatch__chip" style="background:var(--nuage-de-lait)"></div>
+          <div class="swatch__chip" style="background:#FEFAF0"></div>
           <div class="swatch__body">
             <div class="swatch__label">Väri 1</div>
             <div class="swatch__name">Nuage de Lait</div>
             <div class="swatch__hex mono">#FEFAF0</div>
-            <div class="swatch__use mono"><b>--nuage-de-lait</b> · Tausta</div>
+            <div class="swatch__use mono"><b>--vari-1</b> · Tausta</div>
           </div>
         </article>
 
         <article class="swatch" data-hex="#542916">
-          <div class="swatch__chip" style="background:var(--espresso)"></div>
+          <div class="swatch__chip" style="background:#542916"></div>
           <div class="swatch__body">
             <div class="swatch__label">Väri 2</div>
             <div class="swatch__name">Espresso</div>
             <div class="swatch__hex mono">#542916</div>
-            <div class="swatch__use mono"><b>--espresso</b> · Teksti / tummat osiot</div>
+            <div class="swatch__use mono"><b>--vari-2</b> · Teksti / tummat osiot</div>
           </div>
         </article>
 
         <article class="swatch" data-hex="#A13A1E">
-          <div class="swatch__chip" style="background:var(--terre-cuite)"></div>
+          <div class="swatch__chip" style="background:#A13A1E"></div>
           <div class="swatch__body">
             <div class="swatch__label">Väri 3</div>
             <div class="swatch__name">Terre Cuite</div>
             <div class="swatch__hex mono">#A13A1E</div>
-            <div class="swatch__use mono"><b>--terre-cuite</b> · Pää-accent, CTA</div>
+            <div class="swatch__use mono"><b>--vari-3</b> · Pää-accent / CTA</div>
           </div>
         </article>
 
-        <article class="swatch" data-hex="#F1C166">
-          <div class="swatch__chip" style="background:var(--miel-dore)"></div>
+        <article class="swatch" data-hex="#EFE7D2">
+          <div class="swatch__chip" style="background:#EFE7D2"></div>
           <div class="swatch__body">
             <div class="swatch__label">Väri 4</div>
-            <div class="swatch__name">Miel Doré</div>
-            <div class="swatch__hex mono">#F1C166</div>
-            <div class="swatch__use mono"><b>--miel-dore</b> · Lämmin korostus</div>
-          </div>
-        </article>
-
-        <article class="swatch" data-hex="#B79858">
-          <div class="swatch__chip" style="background:var(--eau-trouble)"></div>
-          <div class="swatch__body">
-            <div class="swatch__label">Väri 5</div>
-            <div class="swatch__name">Eau Trouble</div>
-            <div class="swatch__hex mono">#B79858</div>
-            <div class="swatch__use mono"><b>--eau-trouble</b> · Sekundääri okra</div>
-          </div>
-        </article>
-
-        <article class="swatch" data-hex="#88B8CE">
-          <div class="swatch__chip" style="background:var(--bleu-porcelaine)"></div>
-          <div class="swatch__body">
-            <div class="swatch__label">Väri 6</div>
-            <div class="swatch__name">Bleu Porcelaine</div>
-            <div class="swatch__hex mono">#88B8CE</div>
-            <div class="swatch__use mono"><b>--bleu-porcelaine</b> · Viileä pop-accent</div>
+            <div class="swatch__name">Vaalea kerma</div>
+            <div class="swatch__hex mono">#EFE7D2</div>
+            <div class="swatch__use mono"><b>--vari-4</b> · Vaalea teksti (korvaa kullan)</div>
           </div>
         </article>
 
@@ -126,70 +106,110 @@
     <div class="wrap">
       <div class="section-head" style="text-align:left; margin-bottom:32px">
         <span class="label">Laajennettu paletti</span>
-        <h2 style="margin-top:10px">Lämpimät lisävärit</h2>
+        <h2 style="margin-top:10px">Värit 5–14</h2>
         <p style="margin-top:8px; max-width:60ch">
-          Tukisävyjä somesisältöön ja kuvituksiin, ydinpaletin lämmin jatke.
+          Annetut lämpimät ja viileät lisävärit, ydinpaletin jatke.
         </p>
       </div>
       <div class="swatch-grid">
 
-        <article class="swatch" data-hex="#EAE1CB">
-          <div class="swatch__chip" style="background:var(--sable-clair)"></div>
+        <article class="swatch" data-hex="#D36433">
+          <div class="swatch__chip" style="background:#D36433"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 5</div>
+            <div class="swatch__name">Burnt Tangerine</div>
+            <div class="swatch__hex mono">#D36433</div>
+            <div class="swatch__use mono"><b>--vari-5</b> · CTA / korostus</div>
+          </div>
+        </article>
+
+        <article class="swatch" data-hex="#3D2A1C">
+          <div class="swatch__chip" style="background:#3D2A1C"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 6</div>
+            <div class="swatch__name">Bitter Cacao</div>
+            <div class="swatch__hex mono">#3D2A1C</div>
+            <div class="swatch__use mono"><b>--vari-6</b> · Ääriviivat</div>
+          </div>
+        </article>
+
+        <article class="swatch" data-hex="#C67B7B">
+          <div class="swatch__chip" style="background:#C67B7B"></div>
           <div class="swatch__body">
             <div class="swatch__label">Väri 7</div>
-            <div class="swatch__name">Sable Clair</div>
-            <div class="swatch__hex mono">#EAE1CB</div>
-            <div class="swatch__use mono"><b>--sable-clair</b> · Vaalea hiekka</div>
+            <div class="swatch__name">Clay Rose</div>
+            <div class="swatch__hex mono">#C67B7B</div>
+            <div class="swatch__use mono"><b>--vari-7</b> · Pehmeä accent</div>
           </div>
         </article>
 
-        <article class="swatch" data-hex="#D18E97">
-          <div class="swatch__chip" style="background:var(--rose-poussiere)"></div>
+        <article class="swatch" data-hex="#8F915F">
+          <div class="swatch__chip" style="background:#8F915F"></div>
           <div class="swatch__body">
             <div class="swatch__label">Väri 8</div>
-            <div class="swatch__name">Rose Poussière</div>
-            <div class="swatch__hex mono">#D18E97</div>
-            <div class="swatch__use mono"><b>--rose-poussiere</b> · Pölyinen ruusu</div>
+            <div class="swatch__name">Olive Husk</div>
+            <div class="swatch__hex mono">#8F915F</div>
+            <div class="swatch__use mono"><b>--vari-8</b> · Maanläheinen accent</div>
           </div>
         </article>
 
-        <article class="swatch" data-hex="#D2A432">
-          <div class="swatch__chip" style="background:var(--moutarde)"></div>
+        <article class="swatch" data-hex="#F7B634">
+          <div class="swatch__chip" style="background:#F7B634"></div>
           <div class="swatch__body">
             <div class="swatch__label">Väri 9</div>
-            <div class="swatch__name">Moutarde</div>
-            <div class="swatch__hex mono">#D2A432</div>
-            <div class="swatch__use mono"><b>--moutarde</b> · Sinappi / okra</div>
+            <div class="swatch__name">Sun Mellow</div>
+            <div class="swatch__hex mono">#F7B634</div>
+            <div class="swatch__use mono"><b>--vari-9</b> · Kirkas highlight</div>
           </div>
         </article>
 
-        <article class="swatch" data-hex="#979E6C">
-          <div class="swatch__chip" style="background:var(--olive-douce)"></div>
+        <article class="swatch" data-hex="#C1603E">
+          <div class="swatch__chip" style="background:#C1603E"></div>
           <div class="swatch__body">
             <div class="swatch__label">Väri 10</div>
-            <div class="swatch__name">Olive Douce</div>
-            <div class="swatch__hex mono">#979E6C</div>
-            <div class="swatch__use mono"><b>--olive-douce</b> · Pehmeä oliivi</div>
+            <div class="swatch__name">Rhubarb</div>
+            <div class="swatch__hex mono">#C1603E</div>
+            <div class="swatch__use mono"><b>--vari-10</b> · Terrakotta-tausta</div>
           </div>
         </article>
 
-        <article class="swatch" data-hex="#5B3B1E">
-          <div class="swatch__chip" style="background:var(--cacao)"></div>
+        <article class="swatch" data-hex="#B79858">
+          <div class="swatch__chip" style="background:#B79858"></div>
           <div class="swatch__body">
             <div class="swatch__label">Väri 11</div>
-            <div class="swatch__name">Cacao</div>
-            <div class="swatch__hex mono">#5B3B1E</div>
-            <div class="swatch__use mono"><b>--cacao</b> · Tumma kaakao</div>
+            <div class="swatch__name">Eau Trouble</div>
+            <div class="swatch__hex mono">#B79858</div>
+            <div class="swatch__use mono"><b>--vari-11</b> · Kullanruskea band</div>
           </div>
         </article>
 
-        <article class="swatch" data-hex="#BC6727">
-          <div class="swatch__chip" style="background:var(--orange-brule)"></div>
+        <article class="swatch" data-hex="#C48357">
+          <div class="swatch__chip" style="background:#C48357"></div>
           <div class="swatch__body">
             <div class="swatch__label">Väri 12</div>
-            <div class="swatch__name">Orange Brûlé</div>
-            <div class="swatch__hex mono">#BC6727</div>
-            <div class="swatch__use mono"><b>--orange-brule</b> · Poltettu oranssi</div>
+            <div class="swatch__name">Saviruskea</div>
+            <div class="swatch__hex mono">#C48357</div>
+            <div class="swatch__use mono"><b>--vari-12</b> · Lämmin accent</div>
+          </div>
+        </article>
+
+        <article class="swatch" data-hex="#5A6871">
+          <div class="swatch__chip" style="background:#5A6871"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 13</div>
+            <div class="swatch__name">Liuskeensininen</div>
+            <div class="swatch__hex mono">#5A6871</div>
+            <div class="swatch__use mono"><b>--vari-13</b> · Reunat / teksti</div>
+          </div>
+        </article>
+
+        <article class="swatch" data-hex="#D8E0E6">
+          <div class="swatch__chip" style="background:#D8E0E6"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 14</div>
+            <div class="swatch__name">Vaalea siniharmaa</div>
+            <div class="swatch__hex mono">#D8E0E6</div>
+            <div class="swatch__use mono"><b>--vari-14</b> · Laatikot</div>
           </div>
         </article>
 

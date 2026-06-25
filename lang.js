@@ -28,5 +28,25 @@
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
     }
+
+    // Book a table -modaali: avaa kun painetaan #varaa-linkkia
+    var modal = document.getElementById('bookmodal');
+    if (modal) {
+      var closeBook = function () { modal.hidden = true; document.body.style.overflow = ''; };
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href$="#varaa"]');
+        if (a && !a.closest('.bookmodal')) {
+          e.preventDefault();
+          modal.hidden = false;
+          document.body.style.overflow = 'hidden';
+        }
+      });
+      modal.addEventListener('click', function (e) {
+        if (e.target.closest('[data-book-close]')) closeBook();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !modal.hidden) closeBook();
+      });
+    }
   });
 })();

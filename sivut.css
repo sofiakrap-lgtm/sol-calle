@@ -26,7 +26,7 @@
   /* Fontit */
   --font-display: "Poppins", system-ui, -apple-system, sans-serif;   /* fontti 1 — otsikot (Poppins Medium) */
   --font-body:    "Work Sans", system-ui, -apple-system, sans-serif; /* fontti 3 — leipä (Work Sans) */
-  --font-script:  "Shantell Sans", "Comic Sans MS", cursive;         /* käsiala-aksentit */
+  --font-script:  "Poppins", system-ui, -apple-system, sans-serif;   /* aksentit — sama kuin otsikot, ei erillistä fonttia */
 
   --maxw: 1280px;
   --track: 0.22em; /* caps-harvennus (fontti 4) */

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calle Sol — Värit (brändipaletti)</title>
+  <meta name="description" content="Calle Sol -brändin väripaletti: 6 kovaa väriarvoa CSS-muuttujineen ja käyttötarkoituksineen. (Blomman demokonsepti.)" />
+
+  <!-- Brändifontit: Shantell Sans (brush) + Hanken Grotesk (UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&family=Shantell+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====== NAV ====== -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="logo" href="index.html">Calle <span>Sol</span></a>
+      <div class="nav__links">
+        <a href="index.html#tunnelma">Tunnelma</a>
+        <a href="index.html#menu">Menu</a>
+        <a href="index.html#viini">Viini</a>
+        <a href="varit.html" aria-current="page">Värit</a>
+        <a class="btn btn--cta" href="index.html#varaa" style="padding:.6em 1.3em">Varaa pöytä</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== SIVUN OTSIKKO ====== -->
+  <header class="page-hero">
+    <div class="wrap">
+      <span class="label">Brändipaletti</span>
+      <h1>Calle Solin <span class="brush" style="color:var(--terre-cuite)">värit</span></h1>
+      <p>
+        Kuusi kovaa väriarvoa, jotka kantavat koko brändin. Käytä aina
+        CSS-muuttujaa — älä kovakoodaa hexejä komponentteihin.
+        <strong>Klikkaa korttia kopioidaksesi hex-koodin.</strong>
+      </p>
+    </div>
+  </header>
+
+  <!-- ====== KAAKELIPALKKI ====== -->
+  <div class="tiles" aria-hidden="true" style="margin-top:48px">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- ====== YDINPALETTI ====== -->
+  <section>
+    <div class="wrap">
+      <div class="section-head" style="text-align:left; margin-bottom:32px">
+        <span class="label">Ydinpaletti</span>
+        <h2 style="margin-top:10px">Kuusi kovaa väriarvoa</h2>
+      </div>
+      <div class="swatch-grid">
+
+        <article class="swatch" data-hex="#FEFAF0">
+          <div class="swatch__chip" style="background:var(--nuage-de-lait)"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 1</div>
+            <div class="swatch__name">Nuage de Lait</div>
+            <div class="swatch__hex mono">#FEFAF0</div>
+            <div class="swatch__use mono"><b>--nuage-de-lait</b> · Tausta</div>
+          </div>
+        </article>
+
+        <article class="swatch" data-hex="#542916">
+          <div class="swatch__chip" style="background:var(--espresso)"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 2</div>
+            <div class="swatch__name">Espresso</div>
+            <div class="swatch__hex mono">#542916</div>
+            <div class="swatch__use mono"><b>--espresso</b> · Teksti / tummat osiot</div>
+          </div>
+        </article>
+
+        <article class="swatch" data-hex="#A13A1E">
+          <div class="swatch__chip" style="background:var(--terre-cuite)"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 3</div>
+            <div class="swatch__name">Terre Cuite</div>
+            <div class="swatch__hex mono">#A13A1E</div>
+            <div class="swatch__use mono"><b>--terre-cuite</b> · Pää-accent, CTA</div>
+          </div>
+        </article>
+
+        <article class="swatch" data-hex="#F1C166">
+          <div class="swatch__chip" style="background:var(--miel-dore)"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 4</div>
+            <div class="swatch__name">Miel Doré</div>
+            <div class="swatch__hex mono">#F1C166</div>
+            <div class="swatch__use mono"><b>--miel-dore</b> · Lämmin korostus</div>
+          </div>
+        </article>
+
+        <article class="swatch" data-hex="#B79858">
+          <div class="swatch__chip" style="background:var(--eau-trouble)"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 5</div>
+            <div class="swatch__name">Eau Trouble</div>
+            <div class="swatch__hex mono">#B79858</div>
+            <div class="swatch__use mono"><b>--eau-trouble</b> · Sekundääri okra</div>
+          </div>
+        </article>
+
+        <article class="swatch" data-hex="#88B8CE">
+          <div class="swatch__chip" style="background:var(--bleu-porcelaine)"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 6</div>
+            <div class="swatch__name">Bleu Porcelaine</div>
+            <div class="swatch__hex mono">#88B8CE</div>
+            <div class="swatch__use mono"><b>--bleu-porcelaine</b> · Viileä pop-accent</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== LAAJENNETTU PALETTI ====== -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head" style="text-align:left; margin-bottom:32px">
+        <span class="label">Laajennettu paletti</span>
+        <h2 style="margin-top:10px">Lämpimät lisävärit</h2>
+        <p style="margin-top:8px; max-width:60ch">
+          Tukisävyjä somesisältöön ja kuvituksiin — ydinpaletin lämmin jatke.
+        </p>
+      </div>
+      <div class="swatch-grid">
+
+        <article class="swatch" data-hex="#EAE1CB">
+          <div class="swatch__chip" style="background:var(--sable-clair)"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 7</div>
+            <div class="swatch__name">Sable Clair</div>
+            <div class="swatch__hex mono">#EAE1CB</div>
+            <div class="swatch__use mono"><b>--sable-clair</b> · Vaalea hiekka</div>
+          </div>
+        </article>
+
+        <article class="swatch" data-hex="#D18E97">
+          <div class="swatch__chip" style="background:var(--rose-poussiere)"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 8</div>
+            <div class="swatch__name">Rose Poussière</div>
+            <div class="swatch__hex mono">#D18E97</div>
+            <div class="swatch__use mono"><b>--rose-poussiere</b> · Pölyinen ruusu</div>
+          </div>
+        </article>
+
+        <article class="swatch" data-hex="#D2A432">
+          <div class="swatch__chip" style="background:var(--moutarde)"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 9</div>
+            <div class="swatch__name">Moutarde</div>
+            <div class="swatch__hex mono">#D2A432</div>
+            <div class="swatch__use mono"><b>--moutarde</b> · Sinappi / okra</div>
+          </div>
+        </article>
+
+        <article class="swatch" data-hex="#979E6C">
+          <div class="swatch__chip" style="background:var(--olive-douce)"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 10</div>
+            <div class="swatch__name">Olive Douce</div>
+            <div class="swatch__hex mono">#979E6C</div>
+            <div class="swatch__use mono"><b>--olive-douce</b> · Pehmeä oliivi</div>
+          </div>
+        </article>
+
+        <article class="swatch" data-hex="#5B3B1E">
+          <div class="swatch__chip" style="background:var(--cacao)"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 11</div>
+            <div class="swatch__name">Cacao</div>
+            <div class="swatch__hex mono">#5B3B1E</div>
+            <div class="swatch__use mono"><b>--cacao</b> · Tumma kaakao</div>
+          </div>
+        </article>
+
+        <article class="swatch" data-hex="#BC6727">
+          <div class="swatch__chip" style="background:var(--orange-brule)"></div>
+          <div class="swatch__body">
+            <div class="swatch__label">Väri 12</div>
+            <div class="swatch__name">Orange Brûlé</div>
+            <div class="swatch__hex mono">#BC6727</div>
+            <div class="swatch__use mono"><b>--orange-brule</b> · Poltettu oranssi</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <a class="logo" href="index.html">Calle <span>Sol</span></a>
+          <p style="margin-top:12px; opacity:.8; max-width:34ch">
+            Tapas &amp; viinibaari. Lämmintä eteläeurooppalaista tunnelmaa,
+            luonnonviiniä ja kynttilänvaloa.
+          </p>
+        </div>
+        <div>
+          <h4>Löydä</h4>
+          <a href="index.html#tunnelma">Tunnelma</a>
+          <a href="index.html#menu">Menu</a>
+          <a href="index.html#viini">Viini</a>
+          <a href="varit.html">Värit</a>
+        </div>
+        <div>
+          <h4>Yhteys</h4>
+          <a href="#">Aurinkokatu 1</a>
+          <a href="mailto:hola@callesol.demo">hola@callesol.demo</a>
+          <a href="#">@callesol</a>
+        </div>
+      </div>
+      <p class="footer__note">
+        Calle Sol on Blomman portfolio-/demokonsepti — ei oikea ravintola. © 2026.
+      </p>
+    </div>
+  </footer>
+
+  <!-- "kopioitu" -ilmoitus -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const toast = document.getElementById('toast');
+    let toastTimer;
+
+    document.querySelectorAll('.swatch').forEach(card => {
+      card.addEventListener('click', async () => {
+        const hex = card.dataset.hex;
+        try {
+          await navigator.clipboard.writeText(hex);
+          showToast('Kopioitu ' + hex + ' ✦');
+        } catch (e) {
+          showToast(hex);
+        }
+      });
+    });
+
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('show'), 1600);
+    }
+  </script>
+
+</body>
+</html>

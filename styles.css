@@ -12,6 +12,28 @@
   --eau-trouble:      #B79858; /* sekundääri okra */
   --bleu-porcelaine:  #88B8CE; /* viileä pop-accent */
 
+  /* Laajennettu paletti (lisävärit, ks. varit.html) */
+  --sable-clair:      #EAE1CB; /* vaalea hiekka */
+  --rose-poussiere:   #D18E97; /* pölyinen ruusu */
+  --moutarde:         #D2A432; /* sinappi / okra */
+  --olive-douce:      #979E6C; /* pehmeä oliivi */
+  --cacao:            #5B3B1E; /* tumma kaakao */
+  --orange-brule:     #BC6727; /* poltettu oranssi */
+
+  /* Numeroidut väri-aliakset (järjestelmä viittaa "väri N") */
+  --vari-1:  var(--nuage-de-lait);    /* #FEFAF0 */
+  --vari-2:  var(--espresso);         /* #542916 */
+  --vari-3:  var(--terre-cuite);      /* #A13A1E */
+  --vari-4:  var(--miel-dore);        /* #F1C166 */
+  --vari-5:  var(--eau-trouble);      /* #B79858 */
+  --vari-6:  var(--bleu-porcelaine);  /* #88B8CE */
+  --vari-7:  var(--sable-clair);      /* #EAE1CB  (lisä 1) */
+  --vari-8:  var(--rose-poussiere);   /* #D18E97  (lisä 2) */
+  --vari-9:  var(--moutarde);         /* #D2A432  (lisä 3) */
+  --vari-10: var(--olive-douce);      /* #979E6C  (lisä 4) */
+  --vari-11: var(--cacao);            /* #5B3B1E  (lisä 5) */
+  --vari-12: var(--orange-brule);     /* #BC6727  (lisä 6) */
+
   /* Fontit */
   --font-brush:  "Shantell Sans", "Comic Sans MS", cursive;        /* logo / aksentit */
   --font-ui:     "Hanken Grotesk", system-ui, -apple-system, sans-serif; /* otsikot + leipä + UI */
@@ -200,7 +222,94 @@ footer a:hover { opacity: 1; color: var(--miel-dore); }
 footer h4 { text-transform: uppercase; letter-spacing: var(--label-track); font-size: 0.78rem; color: var(--bleu-porcelaine); margin-bottom: 12px; }
 .footer__note { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(254,250,240,0.15); font-size: 0.82rem; opacity: 0.6; }
 
+/* ---- Värisivu (varit.html) ------------------------------------------- */
+
+.mono {
+  font-family: "Hanken Grotesk", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.swatch {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--espresso) 18%, transparent);
+  background: #fff;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.swatch:hover { transform: translateY(-4px); box-shadow: 0 24px 40px -28px rgba(84,41,22,0.45); }
+
+.swatch__chip {
+  height: 190px;
+  /* sisävarjo erottaa vaalean Nuage de Lait -sävyn taustasta */
+  box-shadow: inset 0 0 0 1px rgba(84, 41, 22, 0.08);
+}
+
+.swatch__body { padding: 22px 22px 26px; }
+
+.swatch__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--label-track);
+  color: var(--terre-cuite);
+}
+
+.swatch__name {
+  font-family: var(--font-brush);
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin: 8px 0 6px;
+}
+
+.swatch__hex {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: color-mix(in srgb, var(--espresso) 88%, transparent);
+}
+
+.swatch__use {
+  margin-top: 14px;
+  font-size: 0.82rem;
+  color: color-mix(in srgb, var(--espresso) 60%, transparent);
+}
+.swatch__use b { color: var(--terre-cuite); font-weight: 700; }
+
+/* pieni "kopioitu" -ilmoitus */
+.toast {
+  position: fixed;
+  left: 50%; bottom: 32px;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--espresso);
+  color: var(--nuage-de-lait);
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 18px 40px -18px rgba(84,41,22,0.7);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 50;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+.page-hero { padding: clamp(48px, 8vw, 90px) 0 0; text-align: center; }
+.page-hero h1 { margin: 14px 0; }
+.page-hero p { max-width: 52ch; margin: 0 auto; font-size: 1.15rem; color: color-mix(in srgb, var(--espresso) 80%, transparent); }
+
 /* ---- Responsiivisuus ------------------------------------------------- */
+
+@media (max-width: 980px) {
+  .swatch-grid { grid-template-columns: repeat(2, 1fr); }
+}
 
 @media (max-width: 860px) {
   .hero__grid { grid-template-columns: 1fr; }
@@ -209,4 +318,8 @@ footer h4 { text-transform: uppercase; letter-spacing: var(--label-track); font-
   .menu-list { grid-template-columns: 1fr; }
   .footer__grid { grid-template-columns: 1fr; }
   .nav__links { display: none; }
+}
+
+@media (max-width: 520px) {
+  .swatch-grid { grid-template-columns: 1fr; }
 }

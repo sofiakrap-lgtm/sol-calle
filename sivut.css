@@ -186,7 +186,7 @@ a { color: inherit; text-decoration: none; }
 /* Vasen palsta: kuva 5 */
 .hero107__img {
   position: relative;
-  background: var(--vari-11) center/contain no-repeat;
+  background: var(--vari-11) center/cover no-repeat;
   background-image: linear-gradient(135deg, rgba(84,41,22,.35), rgba(0,0,0,.15)), url("assets/kuvat/kuva-5.webp");
 }
 .hero107__corner {
@@ -422,13 +422,9 @@ a { color: inherit; text-decoration: none; }
 .book217 {
   position: relative;
   padding: clamp(50px, 8vw, 110px) 20px;
-  /* raidallinen alue: kuva 10 + pystyraita-overlay paikkamerkkinä */
-  background:
-    repeating-linear-gradient(90deg, rgba(84,41,22,.16) 0 10px, transparent 10px 22px),
-    var(--vari-5) center/cover no-repeat;
-  background-image:
-    repeating-linear-gradient(90deg, rgba(84,41,22,.16) 0 10px, transparent 10px 22px),
-    url("assets/kuvat/kuva-10.webp");
+  /* koko kuva nakyviin, ei leikkausta, ei toistoa */
+  background: var(--paper) center/contain no-repeat;
+  background-image: url("assets/kuvat/kuva-10.webp");
 }
 .book217__card {
   background: var(--paper);

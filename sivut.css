@@ -591,6 +591,8 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: clamp(40px, 6vw, 84px);
 }
 .cta802__text h2 {
@@ -660,6 +662,20 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto;
 }
 .intro208 p em { font-style: normal; font-weight: 600; }
+
+/* ========================================================================
+   700 — GALLERIA (vain kuvat, ei otsikkoa; alkuperainen 3:4-suhde)
+   ======================================================================== */
+.galleria700 { padding: clamp(8px, 1.5vw, 18px); }
+.galleria700__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(8px, 1.5vw, 18px);
+}
+.galleria700__row img { width: 100%; height: auto; display: block; }
+@media (max-width: 760px) {
+  .galleria700__row { grid-template-columns: repeat(2, 1fr); }
+}
 
 /* ========================================================================
    209 - OTA YHTEYTTÄ (vasen kartta + oikea tumma infopalsta)

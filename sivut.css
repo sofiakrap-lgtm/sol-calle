@@ -518,8 +518,11 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
   padding: clamp(70px, 11vw, 150px) 20px;
   color: var(--vari-7);
-  background: var(--vari-11) center/cover no-repeat;
-  background-image: linear-gradient(rgba(30,15,8,.62), rgba(30,15,8,.62)), url("assets/kuvat/kuva-11.webp");
+  background-color: var(--vari-11);
+  background-image: linear-gradient(rgba(30,15,8,.62), rgba(30,15,8,.62)), url("assets/kuvat/kuva-4.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover, 100% auto;   /* verho peittaa, kuva koko leveydelta (molemmat reunat) */
 }
 .mission908__mark {
   width: clamp(220px, 28vw, 360px);

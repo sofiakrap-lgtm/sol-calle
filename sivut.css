@@ -616,7 +616,7 @@ a { color: inherit; text-decoration: none; }
 
 .cta802 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 45% 55%;
   min-height: 68vh;
 }
 .cta802__text {
@@ -639,7 +639,7 @@ a { color: inherit; text-decoration: none; }
   min-height: 360px;
   background: var(--paper) center/cover no-repeat;
 }
-.cta802--flip { grid-template-columns: 1fr 1fr; }
+.cta802--flip { grid-template-columns: 55% 45%; }
 .cta802--flip .cta802__text { order: 2; }
 .cta802--flip .cta802__img  { order: 1; }
 
@@ -714,7 +714,7 @@ a { color: inherit; text-decoration: none; }
 .rekry__inner { max-width: 54ch; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 20px; }
 .rekry h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.12; }
 .rekry p { font-size: 0.98rem; }
-.rekry .btn--solid { background: var(--vari-1); color: var(--olive-husk); border-color: var(--vari-1); }
+.rekry .btn--solid { background: var(--paper-2); color: var(--olive-husk); border-color: var(--paper-2); }
 
 /* ========================================================================
    209 - OTA YHTEYTTÄ (vasen kartta + oikea tumma infopalsta)

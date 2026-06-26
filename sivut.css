@@ -697,6 +697,12 @@ a { color: inherit; text-decoration: none; }
   .galleria700__row { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* ---- Rekrytointiosio (vihrea tausta + yhteydenotto) ------------------ */
+.rekry { text-align: center; padding: clamp(64px, 10vw, 130px) clamp(20px, 8vw, 120px); }
+.rekry__inner { max-width: 54ch; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.rekry h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.12; }
+.rekry p { font-size: 0.98rem; }
+
 /* ========================================================================
    209 - OTA YHTEYTTÄ (vasen kartta + oikea tumma infopalsta)
    ======================================================================== */

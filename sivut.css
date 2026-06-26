@@ -446,8 +446,8 @@ a { color: inherit; text-decoration: none; }
 .book217 {
   position: relative;
   padding: clamp(50px, 8vw, 110px) 20px;
-  /* koko kuva nakyviin, ei leikkausta, ei toistoa */
-  background: var(--paper) center/contain no-repeat;
+  /* kuva tayttaa osion (reunat koskettavat), korkeus ennallaan */
+  background: var(--paper) center/cover no-repeat;
   background-image: url("assets/kuvat/kuva-10.webp");
 }
 .book217__card {

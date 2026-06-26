@@ -58,6 +58,16 @@ body {
   zoom: 0.8; /* nykyinen 80%-zoom uutena normina */
 }
 
+/* Ohut reuna koko sivun ymparille */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  border: 1.5px solid var(--espresso);
+  pointer-events: none;
+  z-index: 1000;
+}
+
 img { max-width: 100%; display: block; }
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }

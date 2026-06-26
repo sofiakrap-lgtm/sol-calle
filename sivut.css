@@ -480,7 +480,7 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
   padding: clamp(70px, 11vw, 150px) 20px;
   color: var(--vari-7);
-  background: var(--vari-11) top center/100% auto no-repeat;
+  background: var(--vari-11) center/cover no-repeat;
   background-image: linear-gradient(rgba(30,15,8,.62), rgba(30,15,8,.62)), url("assets/kuvat/kuva-11.webp");
 }
 .mission908__mark {
@@ -512,7 +512,7 @@ a { color: inherit; text-decoration: none; }
   padding: clamp(46px, 6vw, 76px) clamp(20px, 5vw, 56px) clamp(30px, 4vw, 48px);
 }
 .footer303__logo {
-  width: 250px; height: 112px;
+  width: 500px; height: 224px; max-width: 100%;
   color: var(--vari-7);
   -webkit-mask-image: url("assets/logot/logo-kaunolla.svg");
           mask-image: url("assets/logot/logo-kaunolla.svg");

@@ -323,9 +323,10 @@ a { color: inherit; text-decoration: none; }
 
 .intro205 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 45% 55%;
   align-items: stretch;
   gap: 0;
+  min-height: 68vh;
 }
 .intro205__text {
   display: flex;
@@ -352,8 +353,7 @@ a { color: inherit; text-decoration: none; }
 .intro205__btns { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
 .intro205__img {
   order: 2;
-  aspect-ratio: 3 / 4;       /* koko pystykuva nakyy, osio mukautuu */
-  align-self: start;
+  min-height: 360px;
   background: var(--paper) center/cover no-repeat;
   background-image: url("assets/kuvat/kuva-12.webp");
 }
@@ -375,6 +375,7 @@ a { color: inherit; text-decoration: none; }
 .btn--solid { background: var(--vari-2); border-color: var(--vari-2); color: var(--paper); }
 
 /* 205-variantti: puolikkaat päittäin (kuva vasen, teksti oikea) */
+.intro205--kuvavasen { grid-template-columns: 55% 45%; }
 .intro205--kuvavasen .intro205__text { order: 2; border-right: none; border-left: 1.5px solid var(--ink); }
 .intro205--kuvavasen .intro205__img  { order: 1; }
 
@@ -627,6 +628,7 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
   text-align: center;
   padding: clamp(40px, 6vw, 84px);
+  border-right: 1.5px solid var(--ink);
 }
 .cta802__text h2 {
   font-size: clamp(2.1rem, 4.4vw, 3.4rem);
@@ -640,7 +642,7 @@ a { color: inherit; text-decoration: none; }
   background: var(--paper) center/cover no-repeat;
 }
 .cta802--flip { grid-template-columns: 55% 45%; }
-.cta802--flip .cta802__text { order: 2; }
+.cta802--flip .cta802__text { order: 2; border-right: none; border-left: 1.5px solid var(--ink); }
 .cta802--flip .cta802__img  { order: 1; }
 
 /* ========================================================================
@@ -822,6 +824,7 @@ a { color: inherit; text-decoration: none; }
   .arvot701__col + .arvot701__col { border-left: none; border-top: 1.5px solid var(--ink); margin-top: 8px; padding-top: 28px; }
   .cta802, .cta802--flip { grid-template-columns: 1fr; }
   .cta802--flip .cta802__text, .cta802--flip .cta802__img { order: 0; }
+  .cta802__text, .cta802--flip .cta802__text { border-left: none; border-right: none; }
   .value904__grid { grid-template-columns: repeat(2, 1fr); }
   .kontakti209 { grid-template-columns: 1fr; }
   .book217 { grid-template-columns: 1fr; }

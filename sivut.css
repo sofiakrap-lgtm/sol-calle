@@ -152,8 +152,74 @@ a { color: inherit; text-decoration: none; }
   font-weight: 700;
 }
 @media (max-width: 860px) {
-  .scrolltop__nav a:not(.is-cta) { display: none; }
   .scrolltop__logo { width: 160px; height: 36px; }
+}
+
+/* ---- Hampurilaispainike + mobiilivalikko-overlay --------------------- */
+.navtoggle {
+  display: none;
+  flex: none;
+  background: transparent;
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+  font-size: 1.4rem;
+  line-height: 1;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 860px) {
+  /* Piilota desktop-linkit ja kielinappi, näytä hampurilainen */
+  .hero107__nav a,
+  .hero107__nav > .langtoggle,
+  .topnav__links a,
+  .topnav__links .langtoggle,
+  .scrolltop__nav a,
+  .scrolltop__nav .langtoggle { display: none; }
+  .navtoggle { display: inline-flex; align-items: center; justify-content: center; }
+  .hero107__nav { justify-content: flex-end; }
+}
+
+.navmodal[hidden] { display: none; }
+.navmodal { position: fixed; inset: 0; z-index: 600; display: flex; }
+.navmodal__overlay { position: absolute; inset: 0; background: rgba(30,15,8,.6); }
+.navmodal__dialog {
+  position: relative; z-index: 1;
+  margin: auto;
+  width: min(560px, 100%);
+  min-height: 100%;
+  background: var(--vari-1);
+  border-left: 1.5px solid var(--ink);
+  border-right: 1.5px solid var(--ink);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding: clamp(64px, 14vw, 110px) clamp(28px, 9vw, 68px);
+}
+.navmodal__dialog a {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 1.15rem;
+  color: var(--ink);
+  padding: 18px 4px;
+  border-bottom: 1.5px solid color-mix(in srgb, var(--ink) 22%, transparent);
+}
+.navmodal__dialog a.is-cta {
+  background: var(--vari-2);
+  color: var(--paper);
+  text-align: center;
+  padding: 20px;
+  font-weight: 700;
+  border-bottom: 0;
+  margin-top: 16px;
+}
+.navmodal__dialog .langtoggle { align-self: flex-start; margin-top: 22px; }
+.navmodal__close {
+  position: absolute; top: 14px; right: 18px;
+  background: transparent; border: 0; font-size: 2.6rem; line-height: 1;
+  color: var(--ink); cursor: pointer;
 }
 
 /* ---- Book a table -modaali ------------------------------------------- */
@@ -594,6 +660,7 @@ a { color: inherit; text-decoration: none; }
 .footer303__desc { font-style: italic; font-size: 0.86rem; opacity: 0.85; max-width: 30ch; }
 .footer303__social { display: flex; gap: 14px; margin-top: 16px; }
 .footer303__social a { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; border: 1px solid var(--vari-7); padding: 5px 9px; }
+.footer303__socialnote { margin-top: 10px; font-size: 0.64rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.6; }
 .footer303__legal {
   border-top: 1px solid color-mix(in srgb, var(--vari-7) 28%, transparent);
   max-width: var(--maxw);
